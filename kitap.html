@@ -1,9 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body></body>
+    <link rel="stylesheet" href="deneme.css">
+</head>
+<body>
+    <div class="arrows">
+        <button class="arrow left" id="prev">&#10094;</button>
+        <button class="arrow right" id="next">&#10095;</button>
+    </div>
+    <div class="container">
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <input type="radio" name="slider" id="item-4">
+
+      <div class="cards">
+        <label class="card" for="item-1" id="song-1">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1616171816i/57461086.jpg" alt="song">
+        </label>
+        <label class="card" for="item-2" id="song-2">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1531311523i/40782756.jpg" alt="song">
+        </label>
+        <label class="card" for="item-3" id="song-3">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1570493665l/52618348.jpg" alt="song">
+        </label>
+        <label class="card" for="item-4" id="song-4">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1603111760i/55726100.jpg" alt="song">
+          </label>
+      </div>
+      <div class="player">
+        <div class="upper-part">
+          <div class="info-area" id="test">
+            <label class="song-info" id="song-info-1">
+              <div class="title">Görünmez Kadınlar</div>
+              <div class="sub-line">
+                <div class="subtitle">Caroline Criado Perez</div>
+              </div>
+            </label>
+            <label class="song-info" id="song-info-2">
+              <div class="title">Kadın ve İktidar:Bir Manifesto</div>
+              <div class="sub-line">
+                <div class="subtitle">Mary Beard</div>
+              </div>
+            </label>
+            <label class="song-info" id="song-info-3">
+              <div class="title">Tarihe Yön Veren 100 Kadın</div>
+              <div class="sub-line">
+                <div class="subtitle">Otzeki</div>
+              </div>
+            </label>
+            <label class="song-info" id="song-info-4">
+                <div class="title">Asi Kızlara Uykudan Önce Hikayeler</div>
+                <div class="sub-line">
+                  <div class="subtitle">Otzeki</div>
+                </div>
+              </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="deneme.js"></script>
+</body>
 </html>
