@@ -3,7 +3,7 @@
 <html lang="en" data-bs-theme="dark">
   <head>
     <script src="/docs/5.3/assets/js/color-modes.js"></script>
-
+    <script src="album.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
@@ -155,6 +155,12 @@
         align-items: center;
         justify-content: space-between;
       }
+      .foto-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lightslategray;
+      }
     </style>
   </head>
   <body>
@@ -229,15 +235,17 @@
       <div class="album py-5 bg-body-tertiary">
         <div class="container">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="divayar">
+            <div class="col">
               <div class="card shadow-sm">
-                <div>
-                  <img
-                    src="https://cdn.pixabay.com/photo/2024/05/06/15/49/grey-heron-8743610_1280.jpg"
-                    class="d-block w-100 circular-image"
-                    alt="..."
-                    border-radius="100px"
-                  />
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="/images/malala.jpg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
@@ -250,13 +258,58 @@
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
+                      <!-- Button trigger modal -->
                       <button
                         type="button"
                         class="btn btn-sm btn-outline-secondary"
-                        onclick=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal1"
                       >
-                        View
+                        Biyograyiyi Gör
                       </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal1"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel1"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel1">
+                                Malala Yousafzai
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Pakistan’da kız çocuklarının eğitim hakkı için
+                              mücadele ederken Taliban tarafından başından
+                              vuruldu. Bu saldırıdan sağ kurtulan Malala, eğitim
+                              hakkı savunuculuğunu daha da ileri taşıdı. 2014’te
+                              Nobel Barış Ödülü’nü alan en genç kişi oldu ve
+                              Malala Fonu’nu kurarak dünya genelinde milyonlarca
+                              kız çocuğuna eğitim imkânı sağladı.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Kapat
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -264,76 +317,163 @@
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="/images/rowling.jpg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
                     J.K. Rowling
                   </text>
-                </svg>
+                </div>
                 <div class="card-body">
                   <p class="card-text">Alanı: Edebiyat</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
+                      <!-- Button trigger modal -->
                       <button
                         type="button"
                         class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal2"
                       >
-                        View
+                        Biyograyiyi Gör
                       </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal2"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel2"
+                        aria-hidden="true"
                       >
-                        Edit
-                      </button>
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel2">
+                                J.K. Rowling
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              J.K. Rowling, Harry Potter serisini yazmadan önce
+                              birçok zorlukla karşılaştı. Depresyonla mücadele
+                              etti, işsiz kaldı ve bir yandan küçük kızını
+                              büyütmeye çalışırken sosyal yardımlarla yaşamını
+                              sürdürdü. Kitabını yayınlatmak için birçok
+                              yayınevinden ret cevabı aldı. Ancak yılmadan
+                              çabaladı ve sonunda Harry Potter serisi, dünya
+                              çapında bir fenomen haline geldi. Bugün, tüm
+                              zamanların en çok satan yazarlarından biri.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Kapat
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="/images/oprah.jpg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
                     Oprah Winfrey
                   </text>
-                </svg>
+                </div>
                 <div class="card-body">
                   <p class="card-text">Alanı: Medya ve Yayıncılık</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
+                      <!-- Button trigger modal -->
                       <button
                         type="button"
                         class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal3"
                       >
-                        View
+                        Biyograyiyi Gör
                       </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal3"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel3"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel3">
+                                Oprah Winfrey
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Oprah, fakir bir ailede büyüdü ve çocukluk
+                              döneminde fiziksel ve cinsel istismara maruz
+                              kaldı. Tüm bu zorluklara rağmen eğitimini
+                              tamamladı ve kariyerine radyo ve televizyonda
+                              çalışarak başladı. Zamanla kendi televizyon
+                              programını kurdu ve medya dünyasında bir
+                              imparatorluk inşa etti. Oprah, aynı zamanda
+                              topluma ve kadın haklarına yönelik çalışmalarıyla
+                              da biliniyor.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -342,138 +482,252 @@
 
             <div class="col">
               <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="/images/sara.jpg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
+                    Sara Blakely
                   </text>
-                </svg>
+                </div>
                 <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
+                  <p class="card-text">Alanı: Girişimcilik</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
+                      <!-- Button trigger modal -->
                       <button
                         type="button"
                         class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal4"
                       >
-                        View
+                        Biyograyiyi Gör
                       </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal4"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel4"
+                        aria-hidden="true"
                       >
-                        Edit
-                      </button>
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel4">
+                                Sara Blakely
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Sara Blakely, Spanx markasını kurmadan önce birçok
+                              zorlukla karşılaştı. Satış temsilcisi olarak
+                              çalışırken kendi işini kurmak için çabalayan
+                              Blakely, fikrini geliştirirken birçok yatırımcıdan
+                              ret cevabı aldı. Sermayesi yoktu ve finansal
+                              destek bulmakta zorlandı. Ancak yılmadan iş
+                              fikrini hayata geçirdi ve Spanx, kısa sürede büyük
+                              bir başarıya ulaştı. Bugün kendi çabasıyla
+                              milyarder olan girişimcilerden biri.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="/images/Folorunso.webp"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
+                    Folorunsho Alakija
                   </text>
-                </svg>
+                </div>
                 <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
+                  <p class="card-text">Alanı: Petrol ve Moda</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
+                      <!-- Button trigger modal -->
                       <button
                         type="button"
                         class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal5"
                       >
-                        View
+                        Biyograyiyi Gör
                       </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal5"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel5"
+                        aria-hidden="true"
                       >
-                        Edit
-                      </button>
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel5">
+                                Folorunsho Alakija
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Folorunsho Alakija, kariyerine bir sekreter olarak
+                              başladı ve daha sonra moda alanında girişimcilik
+                              yaptı. Kendi moda markasını kurarak dünya
+                              genelinde tanınan bir isim haline geldi. Ancak
+                              asıl başarısını, Nijerya’da petrol ve enerji
+                              sektörüne yatırım yaparak elde etti. Petrol
+                              sektöründe bir kadın olarak yer almak ve iş
+                              kurmak, büyük bir mücadele gerektiriyordu. Azmi ve
+                              kararlılığı sayesinde bugün Afrika’nın en zengin
+                              ve başarılı iş kadınlarından biri oldu. Dünyanın
+                              en zenginleri arasında yer alan Alakija,
+                              servetinin bir kısmını eğitim ve sağlık alanlarına
+                              yatırım yaparak topluma geri veriyor.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="images/Maathai.jpg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
+                    Wangari Maathai
                   </text>
-                </svg>
+                </div>
                 <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
+                  <p class="card-text">Alanı: Çevre Aktivizmi</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
+                      <!-- Button trigger modal -->
                       <button
                         type="button"
                         class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal6"
                       >
-                        View
+                        Biyograyiyi Gör
                       </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal6"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel6"
+                        aria-hidden="true"
                       >
-                        Edit
-                      </button>
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel6">
+                                Wangari Maathai
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Wangari Maathai, çevre aktivisti ve Nobel Barış
+                              Ödülü sahibi bir Kenyalı bilim insanıydı. 1977’de
+                              Green Belt Hareketi’ni (Yeşil Kuşak Hareketi)
+                              kurarak, ağaç dikme kampanyaları düzenledi ve
+                              çevre koruma konusunda farkındalık yaratmaya
+                              çalıştı. Maathai, ağaç dikme kampanyaları
+                              sayesinde milyonlarca ağacın dikilmesine öncülük
+                              etti ve çevre koruma konusundaki çalışmalarıyla
+                              dünya genelinde tanındı. Aynı zamanda, kadın
+                              hakları ve demokrasi konularında da aktif bir rol
+                              oynadı. Wangari
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Kapat
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
                   </div>
                 </div>
               </div>
@@ -481,138 +735,248 @@
 
             <div class="col">
               <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="/images/nujood.jpg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
+                    Nujood Ali
                   </text>
-                </svg>
+                </div>
                 <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
+                  <p class="card-text">Alanı: Çocuk Hakları Aktivizmi</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
+                      <!-- Button trigger modal -->
                       <button
                         type="button"
                         class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal7"
                       >
-                        View
+                        Biyograyiyi Gör
                       </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal7"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel7"
+                        aria-hidden="true"
                       >
-                        Edit
-                      </button>
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel7">
+                                Nujood Ali
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Yemen’de çocuk yaşta evlendirilen Nujood Ali, on
+                              yaşında kocasına ve ailesine karşı çıkarak boşanma
+                              davası açtı. Dava sonucunda boşanma hakkı kazanan
+                              Nujood, dünya çapında bir çocuk hakları savunucusu
+                              oldu ve küçük yaşta evlendirilen kız çocuklarının
+                              sesi haline geldi. Hikayesi, küçük yaşta
+                              evlendirilmeye karşı mücadelenin simgesi oldu ve
+                              birçok ülke tarafından dikkate alındı.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="/images/mary.avif"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
+                    Mary Kom
                   </text>
-                </svg>
+                </div>
                 <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
+                  <p class="card-text">Alanı: Spor (Boks)</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
+                      <!-- Button trigger modal -->
                       <button
                         type="button"
                         class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal8"
                       >
-                        View
+                        Biyograyiyi Gör
                       </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal8"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel8"
+                        aria-hidden="true"
                       >
-                        Edit
-                      </button>
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel8">
+                                Mary Kom
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Hindistan’ın yoksul bir bölgesinden gelen Mary
+                              Kom, ailesinin maddi durumu yüzünden birçok zorluk
+                              yaşadı. Boks sporuyla ilgilenmeye başladığında
+                              ailesinin desteğini almakta zorlandı ve antrenman
+                              olanakları kısıtlıydı. Ancak tüm engelleri aşıp,
+                              altı dünya şampiyonluğu kazanan ilk kadın boksör
+                              oldu. Mary Kom, sporda kadınların başarısının bir
+                              simgesi haline geldi.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Kapat
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="/images/leymah.jpg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
                   <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
+                    Leymah Gbowee
                   </text>
-                </svg>
+                </div>
                 <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
+                  <p class="card-text">Alanı: Barış Aktivizmi</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
+                      <!-- Button trigger modal -->
                       <button
                         type="button"
                         class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
                       >
-                        View
+                        Biyograyiyi Gör
                       </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
                       >
-                        Edit
-                      </button>
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="exampleModalLabel"
+                              >
+                                Leymah Gbowee
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Leymah Gbowee, iç savaşın parçaladığı Liberya’da
+                              kadınları organize ederek barış sürecini başlatan
+                              ve ülkenin kaderini değiştiren bir barış
+                              aktivistidir. Kadınların barış için
+                              gerçekleştirdiği protestolar, siyasi ve sosyal
+                              değişimlerin tetikleyicisi oldu. Bu cesur
+                              mücadelelerinden dolayı 2011’de Nobel Barış
+                              Ödülü’ne layık görüldü. Gbowee, barışın kadınlar
+                              tarafından sağlanabileceğine dair güçlü bir mesajı
+                              temsil ediyor.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <small class="text-body-secondary">9 mins</small>
                   </div>
                 </div>
               </div>
