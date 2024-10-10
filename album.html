@@ -65,6 +65,13 @@
     />
 
     <style>
+      .card-body-new {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100px;
+        margin-top: 20px;
+      }
       .circular-image {
         border-radius: 50%;
         width: 100px; /* Set a specific width */
@@ -204,7 +211,15 @@
               </a>
             </li>
           </ul>
-          <form role="search">
+          <div class="search-box">
+            <button class="btn-search"><i class="fa fa-search"></i></button>
+            <input
+              type="text"
+              class="input-search"
+              placeholder="Type to Search..."
+            />
+          </div>
+          <!--<form role="search">
             <input
               class="form-control"
               type="search"
@@ -212,6 +227,7 @@
               aria-label="Search"
             />
           </form>
+          -->
         </div>
       </div>
     </nav>
@@ -244,6 +260,131 @@
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
+                      src="/images/selma.jpg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
+                    Selma Rıza Feraceli
+                  </div>
+                </div>
+                <div class="card-body-new">
+                  <p class="card-text">Alanı: İlk Türk Kadın Gazeteci</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal12"
+                      >
+                        Biyograyiyi Gör
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal12"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel12"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel12">
+                                Selma Rıza Feraceli
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Selma Rıza, 1897’de kaleme aldığı "Uhuvvet"
+                              (Kardeşlik) adlı romanıyla, Türk edebiyatında
+                              farklı bir yere sahip olmuştur. Uhuvvet, kardeşlik
+                              ve insan hakları kavramlarını işleyen, toplumsal
+                              sorunlara duyarlılığıyla dikkat çeken bir eserdi.
+                              Dönemin sosyal yapısını sorgulayan roman, Osmanlı
+                              toplumundaki sınıf farklarını ve adaletsizlikleri
+                              ele alan önemli bir edebi yapıt olarak kabul
+                              edilir. Bu eser, kadın bir yazar tarafından kaleme
+                              alınmış olması nedeniyle de o dönemde cesur bir
+                              adım olarak değerlendirilmiştir. Selma Rıza,
+                              sadece edebiyat alanında değil, kadın hakları
+                              mücadelesinde de öncü olmuştur. Kadınların eğitim
+                              hakkı üzerine yaptığı çalışmalar, Osmanlı’da büyük
+                              yankı uyandırmıştır. Kadınların toplumsal hayatta
+                              yer bulabilmesi için eğitimin hayati önem
+                              taşıdığına inanan Selma Rıza, Osmanlı kadınları
+                              için özel okullar açılması konusunda yıllarca
+                              mücadele etmiştir. Bu uzun soluklu çabaları
+                              sonucunda, Osmanlı İmparatorluğu’nda ilk yatılı
+                              kız lisesinin açılmasını sağlamıştır. Bu okul,
+                              dönemin kadınlarının eğitimle güçlenmesine olanak
+                              tanıyan bir dönüm noktası olmuştur. Selma Rıza’nın
+                              en büyük başarılarından biri de, Osmanlı
+                              İmparatorluğu’nun ilk kadın gazetecisi olmasıdır.
+                              Döneminin toplumsal ve siyasi olaylarına duyarlı
+                              bir kimliğe sahip olan Rıza, bu konuları gazeteler
+                              aracılığıyla halka duyurmuştur. Gazeteciliği,
+                              sadece bir meslek olarak değil, aynı zamanda
+                              toplumsal farkındalığı artırma ve kadınların
+                              sesini duyurma aracı olarak kullanmıştır.
+                              Kadınların karşı karşıya kaldığı sorunları ve hak
+                              ihlallerini dile getirerek, dönemin erkek egemen
+                              basın dünyasında güçlü bir yer edinmiştir.
+                              Paris’te yaşadığı yıllarda Jön Türkler ile
+                              iletişim halinde olan Selma Rıza, burada Osmanlı
+                              toplumunun sorunlarını daha geniş bir
+                              perspektiften gözlemleme fırsatı bulmuş ve
+                              kadınların hakları için daha geniş bir mücadele
+                              başlatmıştır. Özellikle kadınların siyasal hakları
+                              ve toplumsal eşitlik konularında yaptığı
+                              gazetecilik faaliyetleri, onu ilerici bir figür
+                              haline getirmiştir.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Kapat
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
                       src="/images/malala.jpg"
                       class="d-block w-100 circular-image"
                       alt="..."
@@ -252,11 +393,19 @@
                   </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
                     Malala Yousafzai
-                  </text>
+                  </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body-new">
                   <p class="card-text">Alanı: Eğitim Aktivizmi</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -332,11 +481,19 @@
                   </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
                     J.K. Rowling
-                  </text>
+                  </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body-new">
                   <p class="card-text">Alanı: Edebiyat</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -401,6 +558,7 @@
                 </div>
               </div>
             </div>
+
             <div class="col">
               <div class="card shadow-sm">
                 <div class="foto-card">
@@ -414,11 +572,19 @@
                   </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
                     Oprah Winfrey
-                  </text>
+                  </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body-new">
                   <p class="card-text">Alanı: Medya ve Yayıncılık</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -483,7 +649,107 @@
                 </div>
               </div>
             </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="/images/sabiha.jpeg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
+                    Sabiha Gökçen
+                  </div>
+                </div>
+                <div class="card-body-new">
+                  <p class="card-text">Alanı: İlk Kadın Savaş Pilotu</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal13"
+                      >
+                        Biyograyiyi Gör
+                      </button>
 
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal13"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel13"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel13">
+                                Sabiha Gökçen
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              dünyanın ilk kadın savaş pilotu olarak tarihe
+                              geçti. Atatürk’ün manevi kızı olan Gökçen, 1935’te
+                              Türkkuşu Sivil Havacılık Okulu’nda havacılık
+                              eğitimi aldı. Kadınların askeri alanlara dahil
+                              edilmesi o dönemde çok sıra dışı kabul edilirken,
+                              Gökçen büyük bir başarı gösterdi ve Türk Hava
+                              Kuvvetleri'nde görev aldı. 1937 yılında Dersim
+                              Harekâtı'nda aktif olarak savaş pilotu görevini
+                              üstlendi. Cesareti ve yeteneğiyle dikkat çeken
+                              Gökçen, Türkiye’de olduğu kadar dünya genelinde de
+                              büyük ilgi topladı. Balkanlar’da gerçekleştirdiği
+                              uçuş gösterileri ve görevleri, onun uluslararası
+                              alanda tanınmasını sağladı. 1989 yılında ABD Hava
+                              Kuvvetleri tarafından “Dünyanın İlk Kadın Savaş
+                              Pilotu” olarak onurlandırıldı ve Maxwell Hava
+                              Üssü’nde adına bir tören düzenlendi. Onun
+                              başarısı, sadece Türkiye’de değil, dünya genelinde
+                              kadınlara ilham kaynağı oldu. Bugün, İstanbul’daki
+                              Sabiha Gökçen Uluslararası Havalimanı, onun adını
+                              taşımakta ve mirasını yaşatmaktadır.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Kapat
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="col">
               <div class="card shadow-sm">
                 <div class="foto-card">
@@ -497,11 +763,19 @@
                   </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
                     Sara Blakely
-                  </text>
+                  </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body-new">
                   <p class="card-text">Alanı: Girişimcilik</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -571,6 +845,120 @@
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
+                      src="/images/saylan.jpg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
+                    Türkan Saylan
+                  </div>
+                </div>
+                <div class="card-body-new">
+                  <p class="card-text">Alanı: Doktor</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal10"
+                      >
+                        Biyograyiyi Gör
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal10"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel10"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel10">
+                                Türkan Saylan
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Cüzzamı bitiren hekim olarak tanınmasının yanı
+                              sıra, toplumsal kalkınma ve eğitimde fırsat
+                              eşitliği alanında da büyük bir öncü olmuştur.
+                              Hekimlik kariyerine İstanbul Üniversitesi Tıp
+                              Fakültesi’nde dermatoloji profesörü olarak
+                              başlayan Saylan, cüzzam hastalığıyla savaşmak için
+                              Türkiye’nin dört bir yanını gezmiş, hastalara
+                              doğrudan ulaşarak tedavi süreçlerine katkıda
+                              bulunmuştur. Bu alandaki emekleriyle yalnızca
+                              Türkiye’de değil, uluslararası alanda da saygınlık
+                              kazanarak, Uluslararası Lepra Birliği’nin kurucu
+                              üyeleri arasında yer almıştır. Türkan Saylan’ın
+                              eğitim alanındaki çalışmaları, tıp alanındaki
+                              başarılarının da ötesine geçmiştir. 1989 yılında
+                              kurucuları arasında bulunduğu Çağdaş Yaşamı
+                              Destekleme Derneği (ÇYDD) ile özellikle kız
+                              çocuklarının eğitimine yönelik pek çok proje
+                              geliştirmiş ve hayata geçirmiştir. Eğitim alanında
+                              gösterdiği çaba ve kararlılığı, binlerce gencin
+                              eğitim hayatını değiştirmiş ve onların geleceğe
+                              umutla bakabilmesini sağlamıştır. Bu çalışmalar
+                              sonucunda, Uluslararası Gandhi Ödülü'ne layık
+                              görülmüş ve eğitimdeki başarıları dünya çapında
+                              takdirle karşılanmıştır. Saylan, yaşadığı
+                              zorluklar ve sağlık problemlerine rağmen, hiçbir
+                              zaman topluma olan bağlılığını ve hizmet aşkını
+                              yitirmemiştir. Onun hikayesi, kadınların toplumsal
+                              alandaki rolünün güçlendirilmesine dair bir örnek
+                              olmasının yanı sıra, insanlara zorluklar
+                              karşısında yılmadan mücadele etmenin ne kadar
+                              önemli olduğunu göstermektedir. Türkan Saylan,
+                              hayatını insanlığa adayan bir öncü olarak, tıp ve
+                              eğitim alanlarında adını daima yaşatacaktır.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Kapat
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
                       src="/images/Folorunso.webp"
                       class="d-block w-100 circular-image"
                       alt="..."
@@ -579,11 +967,19 @@
                   </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
                     Folorunsho Alakija
-                  </text>
+                  </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body-new">
                   <p class="card-text">Alanı: Petrol ve Moda</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -665,11 +1061,19 @@
                   </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
                     Wangari Maathai
-                  </text>
+                  </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body-new">
                   <p class="card-text">Alanı: Çevre Aktivizmi</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -750,11 +1154,19 @@
                   </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
                     Nujood Ali
-                  </text>
+                  </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body-new">
                   <p class="card-text">Alanı: Çocuk Hakları Aktivizmi</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -831,11 +1243,19 @@
                   </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
                     Mary Kom
-                  </text>
+                  </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body-new">
                   <p class="card-text">Alanı: Spor (Boks)</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -912,11 +1332,19 @@
                   </div>
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
                     Leymah Gbowee
-                  </text>
+                  </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body-new">
                   <p class="card-text">Alanı: Barış Aktivizmi</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
