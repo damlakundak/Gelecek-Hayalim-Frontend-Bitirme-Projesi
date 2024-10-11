@@ -13,10 +13,12 @@
     <link href="/font/css/fontawesome.css" rel="stylesheet" />
     <link href="/font/css/brands.css" rel="stylesheet" />
     <link href="/font/css/solid.css" rel="stylesheet" />
-   
   </head>
   <body>
     <style>
+      body {
+        background-color: #343a40;
+      }
       li:hover {
         background-color: #674904;
         transition: 0.5s;
@@ -126,7 +128,11 @@
     </nav>
     <!-- cover eklenmeli -->
 
-    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      style="height: 85vh; margin-top: 5vh"
+    >
       <div class="carousel-indicators">
         <button
           type="button"
@@ -151,61 +157,243 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <img
-            height="500px"
-            src="/images/DÜNYA2.webp"
-            class="d-block w-100"
-            alt="..."
-          />
-
-          
+          <div class="d-flex justify-content-sm-around !important">
+            <img
+              height="512px"
+              width="891px"
+              src="/images/DÜNYA2.webp"
+              class="d-block"
+              alt="..."
+            />
+          </div>
+          <div
+            class="carousel-caption d-none d-md-flex align-items-center flex-column"
+          >
+            <h3 style="backdrop-filter: blur(15px); width: fit-content">
+              Her Kadın, Dünyanın Renk Paletinde Bir Fırça Darbesi!
+            </h3>
+          </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img
-            height="500px"
-            src="https://cdn.pixabay.com/photo/2023/04/20/12/22/globe-7939725_1280.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <div class="d-flex justify-content-sm-around !important">
+            <img
+              height="550px"
+              width="1000px"
+              src="https://cdn.pixabay.com/photo/2023/04/20/12/22/globe-7939725_1280.jpg"
+              alt="..."
+            />
+          </div>
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h3 style="backdrop-filter: blur(15px); width: fit-content">
+              Bir Kadın, Yüzlerce Hayalin Gerçeğe Dönüşmesidir!
+            </h3>
           </div>
         </div>
         <div class="carousel-item">
           <div class="d-flex justify-content-sm-around !important">
             <img
-              height="500px"
-              width="350px"
-              src="/images/dünya.webp"
+              height="550px"
+              width="400px"
+              src="/images/güzel.webp"
               alt="..."
             />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <div class="carousel-caption d-none d-md-block">
+              <h3 style="backdrop-filter: blur(15px); width: fit-content">
+                Her Kadın, Kendi Sesini Yükselterek Bir Devrim Başlatır!
+              </h3>
+            </div>
           </div>
         </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
 
-      
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+        flex-direction: column;
+      "
+    >
+      <h3
+        style="
+          backdrop-filter: blur(15px);
+          width: fit-content;
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          margin-top: 5vh;
+          margin-left: 5vh;
+          margin-right: 5vh;
+          padding: 10px;
+          background-color: #f8f9fa;
+          color: #000000;
+          text-align: center;
+        "
+      >
+        Yolculuğunuzda Size Eşlik Edebilecek
+      </h3>
+      <h2 style="color: white">Kadın Dayanışması Sağlayan Platformlar</h2>
+      <p style="color: white">
+        STEM (Bilim, Teknoloji, Mühendislik ve Matematik) alanlarında kadınların
+        katılımını artırmak ve cinsiyet eşitliğini teşvik etmek amacıyla birçok
+        büyük teknoloji şirketi, vakıf ve organizasyon çeşitli projeler
+        yürütüyor. Google'ın "Women in Tech" girişimleri gibi global ve yerel
+        düzeyde birçok destekleyici program mevcut. İşte bu alandaki bazı
+        projeler ve inisiyatifler:
+      </p>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>Google’s Women Techmakers</h2>
+          <p>
+            Google tarafından başlatılan Women Techmakers programı, kadınların
+            teknoloji sektöründe güçlenmesini ve daha fazla yer edinmesini
+            sağlamak amacıyla dünya genelinde eğitimler, ağ oluşturma
+            etkinlikleri, mentorluk programları ve konferanslar düzenler.
+            Kadınlara yönelik teknik eğitimler, teknoloji alanında kariyer
+            gelişimi için fırsatlar sunar. Ayrıca, Google’ın çeşitli bursları ve
+            programları bu girişim altında sunulmaktadır.
+          </p>
+          <a href="https://www.womentechmakers.com"> Siteye Git</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>Girls Who Code</h2>
+          <p>
+            Bu global organizasyon, genç kızlara kodlama ve bilgisayar bilimi
+            eğitimi sunmayı amaçlar. Girls Who Code, dünya çapında milyonlarca
+            genç kıza ulaşmış, yazılım geliştirme ve teknoloji kariyerine adım
+            atmalarını teşvik etmiştir. Organizasyon, STEM alanında cinsiyet
+            eşitliğini artırmak için atölyeler, yaz kampları ve mentorluk
+            programları düzenlemektedir.
+          </p>
+          <a href="https">Siteye Git</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>Black Girls Code</h2>
+          <p>
+            Black Girls Code, azınlık gruplarından gelen genç kızları teknoloji
+            dünyasına dahil etmek ve onlara yazılım geliştirme, mühendislik ve
+            girişimcilik becerileri kazandırmak için çalışan bir
+            organizasyondur. Özellikle siyahi kızların STEM alanına katılımını
+            artırmayı hedefleyen bu program, çeşitli eğitimler, etkinlikler ve
+            projeler sunar.
+          </p>
+          <a href="https://www.blackgirlscode.com">Siteye Git</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>Microsoft DigiGirlz</h2>
+          <p>
+            Microsoft tarafından yürütülen DigiGirlz programı, kız öğrencilerin
+            teknolojiyle ilgili kariyerlere yönelmesini desteklemek amacıyla
+            hayata geçirilmiştir. Program, kızların teknoloji dünyasını
+            keşfetmeleri için teknik eğitimler, atölyeler ve mentorluk imkânları
+            sunar. Ayrıca, katılımcılar Microsoft çalışanlarıyla doğrudan
+            etkileşimde bulunarak deneyim kazanır.
+          </p>
+          <a
+            href="https://www.microsoft.com/en-us/diversity/programs/digigirlz/default.aspx"
+            >Siteye Git</a
+          >
+        </div>
+      </div>
+      <div class="col">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>AnitaB.org ve Grace Hopper Celebration</h2>
+          <p>
+            AnitaB.org, teknoloji alanında çalışan kadınları destekleyen ve
+            onların kariyerlerinde ilerlemeleri için olanaklar sunan küresel bir
+            organizasyondur. Her yıl düzenlenen Grace Hopper Celebration,
+            kadınların teknoloji dünyasında buluştuğu en büyük konferanslardan
+            biridir. Etkinlikte, eğitimler, ağ oluşturma fırsatları ve teknoloji
+            dünyasının önemli isimleriyle buluşma imkanları sağlanır.
+          </p>
+          <a href="https://anitab.org/">Siteye Git</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>Girls in Tech</h2>
+          <p>
+            Girls in Tech, dünya genelinde teknoloji alanında çalışan ya da bu
+            alanda kariyer yapmak isteyen kadınları desteklemeyi amaçlayan bir
+            organizasyondur. Teknoloji alanındaki cinsiyet eşitsizliğini
+            gidermeyi hedefleyen bu girişim, eğitim programları, konferanslar ve
+            girişimcilik yarışmaları düzenleyerek kadınların teknoloji
+            sektöründe güçlenmesini sağlar.
+          </p>
+          <a href="https://www.girlsintech.org/">Siteye Git</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3 bg-black">
+          <h2>She++</h2>
+          <p>
+            She++, Stanford Üniversitesi’nde başlatılan bir girişim olarak,
+            kadınları teknoloji ve mühendislik alanında cesaretlendirmeyi
+            hedefler. Bu organizasyon, genç kadınlara yönelik mentorluk ve ağ
+            oluşturma programları, konferanslar ve atölyeler sunar. Özellikle
+            genç kızlara kodlama ve bilgisayar bilimi alanında ilham veren bir
+            yapısı vardır.
+          </p>
+          <a href="https://sheplusplus.stanford.edu/">Siteye Git</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>WiSTEM (Women in STEM)</h2>
+          <p>
+            Birçok üniversite ve teknoloji şirketi, kadınların STEM alanında
+            başarılı olmalarına yardımcı olmak için WiSTEM (Women in STEM) adı
+            altında çeşitli girişimler başlatmıştır. Bu programlar genellikle
+            burslar, kariyer rehberliği, ağ oluşturma ve teknik beceri
+            geliştirme fırsatları sunar.
+          </p>
+          <a href="https://www.womeninstem.org/">Siteye Git</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2>SAP Women in Tech</h2>
+          <p>
+            SAP, teknoloji dünyasında kadınların rolünü güçlendirmek için
+            çeşitli projeler yürütmektedir. Women in Tech girişimi, kadın
+            liderler yetiştirmeyi, onların teknoloji alanındaki kariyerlerinde
+            ilerlemelerine destek olmayı ve eşit temsil sağlamayı hedefler. SAP,
+            kadınların daha fazla teknoloji lideri olmasına katkı sağlamak için
+            eğitimler ve mentorluk fırsatları sunar.
+          </p>
+          <a href="https://www.sap.com/turkey/about/careers/diversity-in"
+            >Siteye Git</a
+          >
+        </div>
+      </div>
     </div>
 
     <!-- footer -->
