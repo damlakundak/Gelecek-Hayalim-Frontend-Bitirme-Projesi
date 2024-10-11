@@ -177,67 +177,6 @@
     </style>
   </head>
   <body>
-    <style>
-      li:hover {
-        background-color: #674904;
-        transition: 0.5s;
-        border-radius: 10px;
-      }
-      .search-box {
-        width: fit-content;
-        height: fit-content;
-        position: relative;
-      }
-      .input-search {
-        height: 50px;
-        width: 50px;
-        border-style: none;
-        padding: 10px;
-        font-size: 18px;
-        letter-spacing: 2px;
-        outline: none;
-        border-radius: 25px;
-        transition: all 0.5s ease-in-out;
-        background-color: #22a6b3;
-        padding-right: 40px;
-        color: #fff;
-      }
-      .input-search::placeholder {
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 18px;
-        letter-spacing: 2px;
-        font-weight: 100;
-      }
-      .btn-search {
-        width: 50px;
-        height: 50px;
-        border-style: none;
-        font-size: 20px;
-        font-weight: bold;
-        outline: none;
-        cursor: pointer;
-        border-radius: 50%;
-        position: absolute;
-        right: 0px;
-        color: #ffffff;
-        background-color: transparent;
-        pointer-events: painted;
-      }
-      .btn-search:focus ~ .input-search {
-        width: 300px;
-        border-radius: 0px;
-        background-color: transparent;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-        transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
-      }
-      .input-search:focus {
-        width: 300px;
-        border-radius: 0px;
-        background-color: transparent;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-        transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
-      }
-    </style>
     <nav
       class="navbar navbar-expand navbar-dark bg-dark"
       aria-label="Second navbar example"
@@ -316,12 +255,102 @@
       <div class="album py-5 bg-body-tertiary">
         <div class="container">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
             <div class="col">
               <div class="card shadow-sm">
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
-                      src="/images/selma.jpg"
+                      src="images/AdaLovelace.jpeg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
+                    Ada Lovelace
+                  </div>
+                </div>
+                <div class="card-body-new">
+                  <p class="card-text">Alanı: Matematik ve Bilgisayar Biliminin Öncüsü</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal13"
+                      >
+                        Biyografiyi Gör
+                      </button>
+            
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal13"
+                        tabindex="-1"
+                        aria-labelledby="modalLabelNew"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabelNew">
+                                Ada Lovelace
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Ada Lovelace (1815-1852), matematikçi ve bilgisayar biliminin öncülerinden 
+                              biri olarak kabul edilen önemli bir figürdür. Tam adı Augusta Ada King, Lovelace 
+                              Kontesi olan Ada, çoğunlukla ilk bilgisayar programcısı olarak tanınır. Matematikçi 
+                              olan annesi tarafından eğitim aldı ve matematiksel dehası erken yaşlardan itibaren fark 
+                              edildi. Analitik Makine üzerine çalışmalar yaptı. Bu makine, modern bilgisayarların öncüsü
+                               sayılmaktadır.1843'te, İtalyan bir matematikçinin makalesini İngilizceye çevirdiği sırada, 
+                               bu makine ile yapılabilecek hesaplamalar hakkında öngörülerde bulundu. Bu notları genişleterek,
+                                Babbage'in makinesiyle gerçekleştirilmesi planlanan ilk algoritmayı yazdı. Bu nedenle Ada Lovelace,
+                                 ilk bilgisayar programcısı olarak kabul edilir.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Kapat
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="images/selma.jpg"
                       class="d-block w-100 circular-image"
                       alt="..."
                       border-radius="100px"
@@ -446,7 +475,99 @@
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
-                      src="/images/malala.jpg"
+                      src="images/hedyLamar.jpeg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
+                    Hedy Lamar
+                  </div>
+                </div>
+                <div class="card-body-new">
+                  <p class="card-text">Alanı: Hollywood aktrisi ve mucit</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal14"
+                      >
+                        Biyografiyi Gör
+                      </button>
+            
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal14"
+                        tabindex="-1"
+                        aria-labelledby="modalLabelNew"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabelNew">
+                                Hedy Lamar
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Hedy Lamarr (1914-2000), sadece ünlü bir Hollywood aktrisi olarak 
+                              değil, aynı zamanda mucit ve teknoloji dünyasına katkıda bulunan bir 
+                              figür olarak da tarihe geçen önemli bir kadındır. Özellikle kablosuz 
+                              iletişim teknolojileri ile ilgili bir buluşla bilinir. II. Dünya Savaşı 
+                              sırasında, radyo dalgalarını karıştırarak torpidoların düşmanlar tarafından
+                               engellenmesini zorlaştıracak bir teknoloji geliştirdi. Bu teknoloji, 
+                               "frekans atlamalı yayılma spektrumu" adıyla bilinir. Hedy Lamarr, bu buluşu 
+                               George Antheil adlı bir besteci ile birlikte geliştirdi. Onların çalışmaları, 
+                               daha sonra Wi-Fi, Bluetooth ve GPS gibi modern kablosuz teknolojilerin temelini 
+                               oluşturdu.
+
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Kapat
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="images/malala.jpg"
                       class="d-block w-100 circular-image"
                       alt="..."
                       border-radius="100px"
@@ -467,7 +588,7 @@
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Eğitim Aktivizmi</p>
+                  <p class="card-text">Alanı: Eğitim Aktivisti</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -529,12 +650,107 @@
                 </div>
               </div>
             </div>
+
             <div class="col">
               <div class="card shadow-sm">
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
-                      src="/images/rowling.jpg"
+                      src="images/graceHopper.jpeg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
+                  Grace Hopper 
+                  </div>
+                </div>
+                <div class="card-body-new">
+                  <p class="card-text">Alanı: Bilgisayar Programcılığı</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal15"
+                      >
+                        Biyograyiyi Gör
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal15"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel1"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel1">
+                                Grace Hopper 
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Grace Hopper (1906-1992), bilgisayar bilimleri alanında devrim yaratan ve kadınların teknoloji 
+                              dünyasındaki rolünü güçlendiren önemli bir figürdür. Genellikle "Büyükannelerinin Bilgisayar Bilimi"
+                               olarak anılan Hopper, programlama dilleri ve yazılım geliştirme konusundaki çalışmalarıyla tanınır.
+                               Grace Hopper, Yale Üniversitesi’nden matematik ve fizik alanında lisans diploması aldı ve ardından 
+                               1934’te Yale Üniversitesi'nden doktora derecesini aldı.II. Dünya Savaşı sırasında, Donanma Rezervi'ne
+                                katıldı ve bilgisayar programcılığı alanındaki kariyerine başladı.COBOL (Common Business-Oriented Language): 
+                                Hopper, 1959’da işletme uygulamaları için tasarlanmış bu yüksek seviyeli programlama dilinin geliştirilmesinde
+                                 önemli bir rol oynadı. COBOL, ticari yazılımlar için yaygın olarak kullanılmış ve hala birçok sistemde yer 
+                                 almaktadır. Bug Terimi: Hopper, bilgisayar hatalarını tanımlamak için "bug" terimini popüler hale getirmiştir.
+                                  Bir sistemdeki bir böceği (gerçek bir böcek) bulup çıkardığı hikayesi, bu terimin kökeni olarak bilinir.
+                              Yazılım Geliştirme ve Otomasyon: Hopper, programların daha erişilebilir ve anlaşılır hale gelmesi için yazılım 
+                              geliştirme süreçlerinde otomasyonu teşvik etti.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Kapat
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="images/rowling.jpg"
                       class="d-block w-100 circular-image"
                       alt="..."
                       border-radius="100px"
@@ -625,7 +841,100 @@
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
-                      src="/images/oprah.jpg"
+                      src="images/reshma.jpeg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
+                  Reshma Saujani  
+                  </div>
+                </div>
+                <div class="card-body-new">
+                  <p class="card-text">Alanı: Aktivist ve Girişimci</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal16"
+                      >
+                        Biyograyiyi Gör
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal16"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel1"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel1">
+                                Reshma Saujani 
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Girls Who Code adlı organizasyonun kurucusu olarak tanınır. Bu organizasyon, 
+                              genç kızlara bilgisayar bilimi ve kodlama eğitimi vererek onları teknoloji sektörüne çekmeyi 
+                              amaçlar.Reshma Saujani, University of Illinois'den lisans diploması aldı ve daha sonra Harvard 
+                              University’den kamu yönetimi alanında yüksek lisans yaptı. Siyasi kariyerine 2010 yılında New York 
+                              Kongresi için yaptığı seçimle başladı. Bu süreçte, kadınların teknoloji alanında daha fazla temsil 
+                              edilmesi gerektiğine dair farkındalık kazandı.Girls Who Code: 2012 yılında kurulan bu organizasyon, 
+                              kız çocuklarını kodlama ve teknoloji alanında kariyer yapmaya teşvik etmek için programlar ve kampanyalar 
+                              düzenlemektedir. Organizasyon, ABD'de ve dünya genelinde milyonlarca genç kıza ulaşmayı başarmıştır. "Brave,
+                               Not Perfect": Reshma Saujani, bu başlıkla bir kitap yayımladı. Kitap, kadınların mükemmel olmaya çalışmak 
+                               yerine cesur olmalarının önemini vurguluyor. Saujani, kadınların risk almaları, hata yapmaları ve bu süreçte 
+                               büyümeleri gerektiğini savunur.  
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Kapat
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="images/oprah.jpg"
                       class="d-block w-100 circular-image"
                       alt="..."
                       border-radius="100px"
@@ -715,7 +1024,7 @@
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
-                      src="/images/sabiha.jpeg"
+                      src="images/sabiha.jpeg"
                       class="d-block w-100 circular-image"
                       alt="..."
                       border-radius="100px"
@@ -811,12 +1120,97 @@
                 </div>
               </div>
             </div>
+
             <div class="col">
               <div class="card shadow-sm">
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
-                      src="/images/sara.jpg"
+                      src="images/suzanW.jpg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
+                  Susan Wojcicki 
+                  </div>
+                </div>
+                <div class="card-body-new">
+                  <p class="card-text">Alanı: CEO </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal17"
+                      >
+                        Biyograyiyi Gör
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal17"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel1"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel1">
+                                Susan Wojcicki 
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Susan Wojcicki, teknoloji dünyasında öne çıkan bir liderdir ve özellikle YouTube'un CEO'su olarak bilinir. 2014 yılından itibaren bu pozisyonda görev yapmış ve platformun büyümesi ve gelişmesinde önemli bir rol oynamıştır.1999 yılında Google'a katıldı ve burada birçok farklı pozisyonda görev yaptı. İlk olarak, Google’ın reklam ve analitik ürünlerinin geliştirilmesinde çalıştı. Ardından, Google’ın reklam ürünlerinin yönetimi ve gelişimi konularında önemli görevler üstlendi.YouTube’un Büyümesi: Wojcicki, YouTube’un içerik stratejisini, reklamcılık modelini ve platformun global bir eğlence ve içerik paylaşım merkezi haline gelmesini sağladı. Kullanıcılar için yeni özellikler ve içerik oluşturucuları destekleyen programlar geliştirdi.
+                              Kadınların Teknoloji Alanındaki Temsili: Susan Wojcicki, teknoloji sektöründeki kadınların temsilinin artırılması için aktif bir şekilde mücadele etmekte ve bu konuda örnek teşkil etmektedir. Kadınların liderlik pozisyonlarında daha fazla yer alması gerektiğini savunmaktadır.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Kapat
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="images/sara.jpg"
                       class="d-block w-100 circular-image"
                       alt="..."
                       border-radius="100px"
@@ -906,7 +1300,7 @@
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
-                      src="/images/saylan.jpg"
+                      src="images/saylan.jpg"
                       class="d-block w-100 circular-image"
                       alt="..."
                       border-radius="100px"
@@ -1015,12 +1409,97 @@
                 </div>
               </div>
             </div>
+
             <div class="col">
               <div class="card shadow-sm">
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
-                      src="/images/Folorunso.webp"
+                      src="images/kimberly.jpeg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
+                  Kimberly Bryant  
+                  </div>
+                </div>
+                <div class="card-body-new">
+                  <p class="card-text">Alanı: Girişimci </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal18"
+                      >
+                        Biyograyiyi Gör
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal18"
+                        tabindex="-1"
+                        aria-labelledby="modalLabel1"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabel1">
+                                Kimberly Bryant  
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Kimberly Bryant, teknoloji alanında kadınların ve özellikle Afro-Amerikan kadınların güçlenmesi için çalışan bir aktivist ve girişimcidir. En çok Black Girls Code adlı organizasyonun kurucusu olarak tanınır. Bu organizasyon, genç Afro-Amerikan kızların teknoloji ve bilgisayar bilimleri alanlarında eğitim almasını sağlamak amacıyla kurulmuştur.Black Girls Code: 2011 yılında kurulan bu organizasyon, Afro-Amerikan kızlara bilgisayar programlama, oyun geliştirme ve diğer teknoloji becerilerini öğretmek için çeşitli atölye çalışmaları ve etkinlikler düzenlemektedir. Bryant, bu organizasyon aracılığıyla kızların STEM (Bilim, Teknoloji, Mühendislik, Matematik) alanında daha fazla temsil edilmesini ve başarılı kariyerlere sahip olmalarını teşvik etmektedir.
+                              Eğitim ve Mentorluk: Kimberly Bryant, genç kızlara ilham vermek ve onları desteklemek için çeşitli mentorluk programları ve eğitim fırsatları sunmaktadır. Kızların teknoloji alanında yeteneklerini geliştirmeleri için kaynaklar sağlamaktadır.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Kapat
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="images/Folorunso.webp"
                       class="d-block w-100 circular-image"
                       alt="..."
                       border-radius="100px"
@@ -1207,7 +1686,7 @@
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
-                      src="/images/nujood.jpg"
+                      src="images/nujood.jpg"
                       class="d-block w-100 circular-image"
                       alt="..."
                       border-radius="100px"
@@ -1296,7 +1775,7 @@
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
-                      src="/images/mary.avif"
+                      src="images/mary.avif"
                       class="d-block w-100 circular-image"
                       alt="..."
                       border-radius="100px"
@@ -1385,7 +1864,7 @@
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
-                      src="/images/leymah.jpg"
+                      src="images/leymah.jpg"
                       class="d-block w-100 circular-image"
                       alt="..."
                       border-radius="100px"
