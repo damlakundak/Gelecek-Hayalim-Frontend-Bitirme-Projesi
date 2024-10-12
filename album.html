@@ -166,17 +166,78 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: lightslategray;
+        background-color: #c097f2db;
       }
 
       .foto-card:hover {
-        background-color: lightgray;
+        background-color: #aac9f4db;
         transition: 0.5s;
         transform: scale(1.1);
       }
     </style>
   </head>
   <body>
+    <style>
+      li:hover {
+        background-color: #674904;
+        transition: 0.5s;
+        border-radius: 10px;
+      }
+      .search-box {
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+      }
+      .input-search {
+        height: 50px;
+        width: 50px;
+        border-style: none;
+        padding: 10px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        outline: none;
+        border-radius: 25px;
+        transition: all 0.5s ease-in-out;
+        background-color: #22a6b3;
+        padding-right: 40px;
+        color: #fff;
+      }
+      .input-search::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 100;
+      }
+      .btn-search {
+        width: 50px;
+        height: 50px;
+        border-style: none;
+        font-size: 20px;
+        font-weight: bold;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+        position: absolute;
+        right: 0px;
+        color: #ffffff;
+        background-color: transparent;
+        pointer-events: painted;
+      }
+      .btn-search:focus ~ .input-search {
+        width: 300px;
+        border-radius: 0px;
+        background-color: transparent;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+      }
+      .input-search:focus {
+        width: 300px;
+        border-radius: 0px;
+        background-color: transparent;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+      }
+    </style>
     <nav
       class="navbar navbar-expand navbar-dark bg-dark"
       aria-label="Second navbar example"
@@ -219,15 +280,6 @@
               placeholder="Type to Search..."
             />
           </div>
-          <!--<form role="search">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-          </form>
-          -->
         </div>
       </div>
     </nav>
@@ -252,99 +304,9 @@
         </div>
       </section>
 
-      <div class="album py-5 bg-body-tertiary">
+      <div class="album py-5">
         <div class="container">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <div class="foto-card">
-                  <div style="width: 200px">
-                    <img
-                      src="images/AdaLovelace.jpeg"
-                      class="d-block w-100 circular-image"
-                      alt="..."
-                      border-radius="100px"
-                    />
-                  </div>
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <div
-                    class="card-title"
-                    style="
-                      font-weight: bold;
-                      font-size: 1.2em;
-                      color: #ffffff;
-                      text-shadow: 2px 2px 4px #000000;
-                    "
-                  >
-                    Ada Lovelace
-                  </div>
-                </div>
-                <div class="card-body-new">
-                  <p class="card-text">Alanı: Matematik ve Bilgisayar Biliminin Öncüsü</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <!-- Button trigger modal -->
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modal13"
-                      >
-                        Biyografiyi Gör
-                      </button>
-            
-                      <!-- Modal -->
-                      <div
-                        class="modal fade"
-                        id="modal13"
-                        tabindex="-1"
-                        aria-labelledby="modalLabelNew"
-                        aria-hidden="true"
-                      >
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="modalLabelNew">
-                                Ada Lovelace
-                              </h1>
-                              <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                              ></button>
-                            </div>
-                            <div class="modal-body">
-                              Ada Lovelace (1815-1852), matematikçi ve bilgisayar biliminin öncülerinden 
-                              biri olarak kabul edilen önemli bir figürdür. Tam adı Augusta Ada King, Lovelace 
-                              Kontesi olan Ada, çoğunlukla ilk bilgisayar programcısı olarak tanınır. Matematikçi 
-                              olan annesi tarafından eğitim aldı ve matematiksel dehası erken yaşlardan itibaren fark 
-                              edildi. Analitik Makine üzerine çalışmalar yaptı. Bu makine, modern bilgisayarların öncüsü
-                               sayılmaktadır.1843'te, İtalyan bir matematikçinin makalesini İngilizceye çevirdiği sırada, 
-                               bu makine ile yapılabilecek hesaplamalar hakkında öngörülerde bulundu. Bu notları genişleterek,
-                                Babbage'in makinesiyle gerçekleştirilmesi planlanan ilk algoritmayı yazdı. Bu nedenle Ada Lovelace,
-                                 ilk bilgisayar programcısı olarak kabul edilir.
-                            </div>
-                            <div class="modal-footer">
-                              <button
-                                type="button"
-                                class="btn btn-secondary"
-                                data-bs-dismiss="modal"
-                              >
-                                Kapat
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
             <div class="col">
               <div class="card shadow-sm">
                 <div class="foto-card">
@@ -371,7 +333,12 @@
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: İlk Türk Kadın Gazeteci</p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    İlk Türk Kadın Gazeteci
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -496,8 +463,15 @@
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Hollywood aktrisi ve mucit</p>
-                  <div class="d-flex justify-content-between align-items-center">
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Hollywood Aktrisi ve Mucit
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
                     <div class="btn-group">
                       <!-- Button trigger modal -->
                       <button
@@ -508,7 +482,7 @@
                       >
                         Biyografiyi Gör
                       </button>
-            
+
                       <!-- Modal -->
                       <div
                         class="modal fade"
@@ -531,17 +505,21 @@
                               ></button>
                             </div>
                             <div class="modal-body">
-                              Hedy Lamarr (1914-2000), sadece ünlü bir Hollywood aktrisi olarak 
-                              değil, aynı zamanda mucit ve teknoloji dünyasına katkıda bulunan bir 
-                              figür olarak da tarihe geçen önemli bir kadındır. Özellikle kablosuz 
-                              iletişim teknolojileri ile ilgili bir buluşla bilinir. II. Dünya Savaşı 
-                              sırasında, radyo dalgalarını karıştırarak torpidoların düşmanlar tarafından
-                               engellenmesini zorlaştıracak bir teknoloji geliştirdi. Bu teknoloji, 
-                               "frekans atlamalı yayılma spektrumu" adıyla bilinir. Hedy Lamarr, bu buluşu 
-                               George Antheil adlı bir besteci ile birlikte geliştirdi. Onların çalışmaları, 
-                               daha sonra Wi-Fi, Bluetooth ve GPS gibi modern kablosuz teknolojilerin temelini 
-                               oluşturdu.
-
+                              Hedy Lamarr (1914-2000), sadece ünlü bir Hollywood
+                              aktrisi olarak değil, aynı zamanda mucit ve
+                              teknoloji dünyasına katkıda bulunan bir figür
+                              olarak da tarihe geçen önemli bir kadındır.
+                              Özellikle kablosuz iletişim teknolojileri ile
+                              ilgili bir buluşla bilinir. II. Dünya Savaşı
+                              sırasında, radyo dalgalarını karıştırarak
+                              torpidoların düşmanlar tarafından engellenmesini
+                              zorlaştıracak bir teknoloji geliştirdi. Bu
+                              teknoloji, "frekans atlamalı yayılma spektrumu"
+                              adıyla bilinir. Hedy Lamarr, bu buluşu George
+                              Antheil adlı bir besteci ile birlikte geliştirdi.
+                              Onların çalışmaları, daha sonra Wi-Fi, Bluetooth
+                              ve GPS gibi modern kablosuz teknolojilerin
+                              temelini oluşturdu.
                             </div>
                             <div class="modal-footer">
                               <button
@@ -560,7 +538,6 @@
                 </div>
               </div>
             </div>
-            
 
             <div class="col">
               <div class="card shadow-sm">
@@ -588,7 +565,12 @@
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Eğitim Aktivisti</p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Eğitim Aktivisti
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -650,7 +632,109 @@
                 </div>
               </div>
             </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="foto-card">
+                  <div style="width: 200px">
+                    <img
+                      src="images/AdaLovelace.jpeg"
+                      class="d-block w-100 circular-image"
+                      alt="..."
+                      border-radius="100px"
+                    />
+                  </div>
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <div
+                    class="card-title"
+                    style="
+                      font-weight: bold;
+                      font-size: 1.2em;
+                      color: #ffffff;
+                      text-shadow: 2px 2px 4px #000000;
+                    "
+                  >
+                    Ada Lovelace
+                  </div>
+                </div>
+                <div class="card-body-new">
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Matematik ve Bilgisayar Biliminin Öncüsü
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal13"
+                      >
+                        Biyografiyi Gör
+                      </button>
 
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="modal13"
+                        tabindex="-1"
+                        aria-labelledby="modalLabelNew"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="modalLabelNew">
+                                Ada Lovelace
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Ada Lovelace (1815-1852), matematikçi ve
+                              bilgisayar biliminin öncülerinden biri olarak
+                              kabul edilen önemli bir figürdür. Tam adı Augusta
+                              Ada King, Lovelace Kontesi olan Ada, çoğunlukla
+                              ilk bilgisayar programcısı olarak tanınır.
+                              Matematikçi olan annesi tarafından eğitim aldı ve
+                              matematiksel dehası erken yaşlardan itibaren fark
+                              edildi. Analitik Makine üzerine çalışmalar yaptı.
+                              Bu makine, modern bilgisayarların öncüsü
+                              sayılmaktadır.1843'te, İtalyan bir matematikçinin
+                              makalesini İngilizceye çevirdiği sırada, bu makine
+                              ile yapılabilecek hesaplamalar hakkında
+                              öngörülerde bulundu. Bu notları genişleterek,
+                              Babbage'in makinesiyle gerçekleştirilmesi
+                              planlanan ilk algoritmayı yazdı. Bu nedenle Ada
+                              Lovelace, ilk bilgisayar programcısı olarak kabul
+                              edilir.
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Kapat
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="col">
               <div class="card shadow-sm">
                 <div class="foto-card">
@@ -673,11 +757,16 @@
                       text-shadow: 2px 2px 4px #000000;
                     "
                   >
-                  Grace Hopper 
+                    Grace Hopper
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Bilgisayar Programcılığı</p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Bilgisayar Programcılığı
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -704,7 +793,7 @@
                           <div class="modal-content">
                             <div class="modal-header">
                               <h1 class="modal-title fs-5" id="modalLabel1">
-                                Grace Hopper 
+                                Grace Hopper
                               </h1>
                               <button
                                 type="button"
@@ -714,18 +803,32 @@
                               ></button>
                             </div>
                             <div class="modal-body">
-                              Grace Hopper (1906-1992), bilgisayar bilimleri alanında devrim yaratan ve kadınların teknoloji 
-                              dünyasındaki rolünü güçlendiren önemli bir figürdür. Genellikle "Büyükannelerinin Bilgisayar Bilimi"
-                               olarak anılan Hopper, programlama dilleri ve yazılım geliştirme konusundaki çalışmalarıyla tanınır.
-                               Grace Hopper, Yale Üniversitesi’nden matematik ve fizik alanında lisans diploması aldı ve ardından 
-                               1934’te Yale Üniversitesi'nden doktora derecesini aldı.II. Dünya Savaşı sırasında, Donanma Rezervi'ne
-                                katıldı ve bilgisayar programcılığı alanındaki kariyerine başladı.COBOL (Common Business-Oriented Language): 
-                                Hopper, 1959’da işletme uygulamaları için tasarlanmış bu yüksek seviyeli programlama dilinin geliştirilmesinde
-                                 önemli bir rol oynadı. COBOL, ticari yazılımlar için yaygın olarak kullanılmış ve hala birçok sistemde yer 
-                                 almaktadır. Bug Terimi: Hopper, bilgisayar hatalarını tanımlamak için "bug" terimini popüler hale getirmiştir.
-                                  Bir sistemdeki bir böceği (gerçek bir böcek) bulup çıkardığı hikayesi, bu terimin kökeni olarak bilinir.
-                              Yazılım Geliştirme ve Otomasyon: Hopper, programların daha erişilebilir ve anlaşılır hale gelmesi için yazılım 
-                              geliştirme süreçlerinde otomasyonu teşvik etti.
+                              Grace Hopper (1906-1992), bilgisayar bilimleri
+                              alanında devrim yaratan ve kadınların teknoloji
+                              dünyasındaki rolünü güçlendiren önemli bir
+                              figürdür. Genellikle "Büyükannelerinin Bilgisayar
+                              Bilimi" olarak anılan Hopper, programlama dilleri
+                              ve yazılım geliştirme konusundaki çalışmalarıyla
+                              tanınır. Grace Hopper, Yale Üniversitesi’nden
+                              matematik ve fizik alanında lisans diploması aldı
+                              ve ardından 1934’te Yale Üniversitesi'nden doktora
+                              derecesini aldı.II. Dünya Savaşı sırasında,
+                              Donanma Rezervi'ne katıldı ve bilgisayar
+                              programcılığı alanındaki kariyerine başladı.COBOL
+                              (Common Business-Oriented Language): Hopper,
+                              1959’da işletme uygulamaları için tasarlanmış bu
+                              yüksek seviyeli programlama dilinin
+                              geliştirilmesinde önemli bir rol oynadı. COBOL,
+                              ticari yazılımlar için yaygın olarak kullanılmış
+                              ve hala birçok sistemde yer almaktadır. Bug
+                              Terimi: Hopper, bilgisayar hatalarını tanımlamak
+                              için "bug" terimini popüler hale getirmiştir. Bir
+                              sistemdeki bir böceği (gerçek bir böcek) bulup
+                              çıkardığı hikayesi, bu terimin kökeni olarak
+                              bilinir. Yazılım Geliştirme ve Otomasyon: Hopper,
+                              programların daha erişilebilir ve anlaşılır hale
+                              gelmesi için yazılım geliştirme süreçlerinde
+                              otomasyonu teşvik etti.
                             </div>
                             <div class="modal-footer">
                               <button
@@ -771,7 +874,12 @@
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Edebiyat</p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Edebiyat
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -841,7 +949,7 @@
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
-                      src="images/reshma.jpeg"
+                      src="images/reshma.jpg"
                       class="d-block w-100 circular-image"
                       alt="..."
                       border-radius="100px"
@@ -858,11 +966,16 @@
                       text-shadow: 2px 2px 4px #000000;
                     "
                   >
-                  Reshma Saujani  
+                    Reshma Saujani
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Aktivist ve Girişimci</p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Aktivist ve Girişimci
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -889,7 +1002,7 @@
                           <div class="modal-content">
                             <div class="modal-header">
                               <h1 class="modal-title fs-5" id="modalLabel1">
-                                Reshma Saujani 
+                                Reshma Saujani
                               </h1>
                               <button
                                 type="button"
@@ -899,17 +1012,28 @@
                               ></button>
                             </div>
                             <div class="modal-body">
-                              Girls Who Code adlı organizasyonun kurucusu olarak tanınır. Bu organizasyon, 
-                              genç kızlara bilgisayar bilimi ve kodlama eğitimi vererek onları teknoloji sektörüne çekmeyi 
-                              amaçlar.Reshma Saujani, University of Illinois'den lisans diploması aldı ve daha sonra Harvard 
-                              University’den kamu yönetimi alanında yüksek lisans yaptı. Siyasi kariyerine 2010 yılında New York 
-                              Kongresi için yaptığı seçimle başladı. Bu süreçte, kadınların teknoloji alanında daha fazla temsil 
-                              edilmesi gerektiğine dair farkındalık kazandı.Girls Who Code: 2012 yılında kurulan bu organizasyon, 
-                              kız çocuklarını kodlama ve teknoloji alanında kariyer yapmaya teşvik etmek için programlar ve kampanyalar 
-                              düzenlemektedir. Organizasyon, ABD'de ve dünya genelinde milyonlarca genç kıza ulaşmayı başarmıştır. "Brave,
-                               Not Perfect": Reshma Saujani, bu başlıkla bir kitap yayımladı. Kitap, kadınların mükemmel olmaya çalışmak 
-                               yerine cesur olmalarının önemini vurguluyor. Saujani, kadınların risk almaları, hata yapmaları ve bu süreçte 
-                               büyümeleri gerektiğini savunur.  
+                              Girls Who Code adlı organizasyonun kurucusu olarak
+                              tanınır. Bu organizasyon, genç kızlara bilgisayar
+                              bilimi ve kodlama eğitimi vererek onları teknoloji
+                              sektörüne çekmeyi amaçlar.Reshma Saujani,
+                              University of Illinois'den lisans diploması aldı
+                              ve daha sonra Harvard University’den kamu yönetimi
+                              alanında yüksek lisans yaptı. Siyasi kariyerine
+                              2010 yılında New York Kongresi için yaptığı
+                              seçimle başladı. Bu süreçte, kadınların teknoloji
+                              alanında daha fazla temsil edilmesi gerektiğine
+                              dair farkındalık kazandı.Girls Who Code: 2012
+                              yılında kurulan bu organizasyon, kız çocuklarını
+                              kodlama ve teknoloji alanında kariyer yapmaya
+                              teşvik etmek için programlar ve kampanyalar
+                              düzenlemektedir. Organizasyon, ABD'de ve dünya
+                              genelinde milyonlarca genç kıza ulaşmayı
+                              başarmıştır. "Brave, Not Perfect": Reshma Saujani,
+                              bu başlıkla bir kitap yayımladı. Kitap, kadınların
+                              mükemmel olmaya çalışmak yerine cesur olmalarının
+                              önemini vurguluyor. Saujani, kadınların risk
+                              almaları, hata yapmaları ve bu süreçte büyümeleri
+                              gerektiğini savunur.
                             </div>
                             <div class="modal-footer">
                               <button
@@ -955,7 +1079,12 @@
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Medya ve Yayıncılık</p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Medya ve Yayıncılık
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -1045,7 +1174,12 @@
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: İlk Kadın Savaş Pilotu</p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    İlk Kadın Savaş Pilotu
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -1126,7 +1260,7 @@
                 <div class="foto-card">
                   <div style="width: 200px">
                     <img
-                      src="images/suzanW.jpg"
+                      src="images/susan.jpg"
                       class="d-block w-100 circular-image"
                       alt="..."
                       border-radius="100px"
@@ -1143,11 +1277,16 @@
                       text-shadow: 2px 2px 4px #000000;
                     "
                   >
-                  Susan Wojcicki 
+                    Susan Wojcicki
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: CEO </p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    CEO
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -1174,7 +1313,7 @@
                           <div class="modal-content">
                             <div class="modal-header">
                               <h1 class="modal-title fs-5" id="modalLabel1">
-                                Susan Wojcicki 
+                                Susan Wojcicki
                               </h1>
                               <button
                                 type="button"
@@ -1184,8 +1323,28 @@
                               ></button>
                             </div>
                             <div class="modal-body">
-                              Susan Wojcicki, teknoloji dünyasında öne çıkan bir liderdir ve özellikle YouTube'un CEO'su olarak bilinir. 2014 yılından itibaren bu pozisyonda görev yapmış ve platformun büyümesi ve gelişmesinde önemli bir rol oynamıştır.1999 yılında Google'a katıldı ve burada birçok farklı pozisyonda görev yaptı. İlk olarak, Google’ın reklam ve analitik ürünlerinin geliştirilmesinde çalıştı. Ardından, Google’ın reklam ürünlerinin yönetimi ve gelişimi konularında önemli görevler üstlendi.YouTube’un Büyümesi: Wojcicki, YouTube’un içerik stratejisini, reklamcılık modelini ve platformun global bir eğlence ve içerik paylaşım merkezi haline gelmesini sağladı. Kullanıcılar için yeni özellikler ve içerik oluşturucuları destekleyen programlar geliştirdi.
-                              Kadınların Teknoloji Alanındaki Temsili: Susan Wojcicki, teknoloji sektöründeki kadınların temsilinin artırılması için aktif bir şekilde mücadele etmekte ve bu konuda örnek teşkil etmektedir. Kadınların liderlik pozisyonlarında daha fazla yer alması gerektiğini savunmaktadır.
+                              Susan Wojcicki, teknoloji dünyasında öne çıkan bir
+                              liderdir ve özellikle YouTube'un CEO'su olarak
+                              bilinir. 2014 yılından itibaren bu pozisyonda
+                              görev yapmış ve platformun büyümesi ve
+                              gelişmesinde önemli bir rol oynamıştır.1999
+                              yılında Google'a katıldı ve burada birçok farklı
+                              pozisyonda görev yaptı. İlk olarak, Google’ın
+                              reklam ve analitik ürünlerinin geliştirilmesinde
+                              çalıştı. Ardından, Google’ın reklam ürünlerinin
+                              yönetimi ve gelişimi konularında önemli görevler
+                              üstlendi.YouTube’un Büyümesi: Wojcicki, YouTube’un
+                              içerik stratejisini, reklamcılık modelini ve
+                              platformun global bir eğlence ve içerik paylaşım
+                              merkezi haline gelmesini sağladı. Kullanıcılar
+                              için yeni özellikler ve içerik oluşturucuları
+                              destekleyen programlar geliştirdi. Kadınların
+                              Teknoloji Alanındaki Temsili: Susan Wojcicki,
+                              teknoloji sektöründeki kadınların temsilinin
+                              artırılması için aktif bir şekilde mücadele
+                              etmekte ve bu konuda örnek teşkil etmektedir.
+                              Kadınların liderlik pozisyonlarında daha fazla yer
+                              alması gerektiğini savunmaktadır.
                             </div>
                             <div class="modal-footer">
                               <button
@@ -1231,7 +1390,12 @@
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Girişimcilik</p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Girişimcilik
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -1321,7 +1485,12 @@
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Doktor</p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Doktor
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -1432,11 +1601,16 @@
                       text-shadow: 2px 2px 4px #000000;
                     "
                   >
-                  Kimberly Bryant  
+                    Kimberly Bryant
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Girişimci </p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Girişimci
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -1463,7 +1637,7 @@
                           <div class="modal-content">
                             <div class="modal-header">
                               <h1 class="modal-title fs-5" id="modalLabel1">
-                                Kimberly Bryant  
+                                Kimberly Bryant
                               </h1>
                               <button
                                 type="button"
@@ -1473,8 +1647,28 @@
                               ></button>
                             </div>
                             <div class="modal-body">
-                              Kimberly Bryant, teknoloji alanında kadınların ve özellikle Afro-Amerikan kadınların güçlenmesi için çalışan bir aktivist ve girişimcidir. En çok Black Girls Code adlı organizasyonun kurucusu olarak tanınır. Bu organizasyon, genç Afro-Amerikan kızların teknoloji ve bilgisayar bilimleri alanlarında eğitim almasını sağlamak amacıyla kurulmuştur.Black Girls Code: 2011 yılında kurulan bu organizasyon, Afro-Amerikan kızlara bilgisayar programlama, oyun geliştirme ve diğer teknoloji becerilerini öğretmek için çeşitli atölye çalışmaları ve etkinlikler düzenlemektedir. Bryant, bu organizasyon aracılığıyla kızların STEM (Bilim, Teknoloji, Mühendislik, Matematik) alanında daha fazla temsil edilmesini ve başarılı kariyerlere sahip olmalarını teşvik etmektedir.
-                              Eğitim ve Mentorluk: Kimberly Bryant, genç kızlara ilham vermek ve onları desteklemek için çeşitli mentorluk programları ve eğitim fırsatları sunmaktadır. Kızların teknoloji alanında yeteneklerini geliştirmeleri için kaynaklar sağlamaktadır.
+                              Kimberly Bryant, teknoloji alanında kadınların ve
+                              özellikle Afro-Amerikan kadınların güçlenmesi için
+                              çalışan bir aktivist ve girişimcidir. En çok Black
+                              Girls Code adlı organizasyonun kurucusu olarak
+                              tanınır. Bu organizasyon, genç Afro-Amerikan
+                              kızların teknoloji ve bilgisayar bilimleri
+                              alanlarında eğitim almasını sağlamak amacıyla
+                              kurulmuştur.Black Girls Code: 2011 yılında kurulan
+                              bu organizasyon, Afro-Amerikan kızlara bilgisayar
+                              programlama, oyun geliştirme ve diğer teknoloji
+                              becerilerini öğretmek için çeşitli atölye
+                              çalışmaları ve etkinlikler düzenlemektedir.
+                              Bryant, bu organizasyon aracılığıyla kızların STEM
+                              (Bilim, Teknoloji, Mühendislik, Matematik)
+                              alanında daha fazla temsil edilmesini ve başarılı
+                              kariyerlere sahip olmalarını teşvik etmektedir.
+                              Eğitim ve Mentorluk: Kimberly Bryant, genç kızlara
+                              ilham vermek ve onları desteklemek için çeşitli
+                              mentorluk programları ve eğitim fırsatları
+                              sunmaktadır. Kızların teknoloji alanında
+                              yeteneklerini geliştirmeleri için kaynaklar
+                              sağlamaktadır.
                             </div>
                             <div class="modal-footer">
                               <button
@@ -1520,7 +1714,12 @@
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Petrol ve Moda</p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Petrol ve Moda
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -1614,7 +1813,12 @@
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Çevre Aktivizmi</p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Çevre Aktivizmi
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -1707,7 +1911,12 @@
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Çocuk Hakları Aktivizmi</p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Çocuk Hakları Aktivizmi
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -1796,7 +2005,12 @@
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Spor (Boks)</p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Spor (Boks)
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -1885,7 +2099,12 @@
                   </div>
                 </div>
                 <div class="card-body-new">
-                  <p class="card-text">Alanı: Barış Aktivizmi</p>
+                  <p
+                    class="card-text"
+                    style="font-weight: bold; font-size: 1.1em; color: #67a4ef"
+                  >
+                    Barış Aktivizmi
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -1957,6 +2176,118 @@
         </div>
       </div>
     </main>
+
+    <!-- footer -->
+    <footer class="py-3 my-4 border-top">
+      <div
+        class="d-flex align-items-center justify-content-evenly"
+        style="color: white"
+      >
+        <div class="d-flex flex-row align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-github"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+            />
+          </svg>
+
+          <div class="d-flex flex-column align-items-center">
+            <a
+              href="https://github.com/aysegulsum"
+              class="text-white"
+              style="margin: 5px"
+            >
+              aysegulsum
+            </a>
+            <a
+              href="https://github.com/damlakundak"
+              class="text-white"
+              style="margin: 5px"
+            >
+              damlakundak
+            </a>
+          </div>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-linkedin"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+            />
+          </svg>
+
+          <div class="d-flex flex-column align-items-center m-lg-2">
+            <a
+              href="https://www.linkedin.com/in/ay%C5%9Fe-g%C3%BCls%C3%BCm-eren-4375701bb/"
+              class="text-white"
+              style="margin: 5px"
+            >
+              Ayşe Gülsüm Eren
+            </a>
+            <a
+              href="https://www.linkedin.com/in/damla-kundak-2027bb270/"
+              class="text-white"
+              style="margin: 5px"
+            >
+              Damla Kundak
+            </a>
+          </div>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-envelope"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+            />
+          </svg>
+
+          <div class="d-flex flex-column align-items-center m-lg-2">
+            <a
+              href="mailto:info@example.com"
+              class="text-white"
+              style="margin: 5px"
+            >
+              aaysegulsumm@gmail.com
+            </a>
+            <a href="mailto:info@example.com" class="text-white">
+              damlakundak@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="55"
+          height="55"
+          fill="currentColor"
+          class="bi bi-balloon-heart"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"
+          />
+        </svg>
+      </div>
+    </footer>
 
     <script
       src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
