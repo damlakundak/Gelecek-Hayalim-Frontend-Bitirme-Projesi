@@ -16,85 +16,19 @@
 
     <!--Kitap css dosyasının bağlantısı  -->
     <link rel="stylesheet" href="kitap.css" />
+    <!--Font Awesome dosyalarını projeye dahil etme -->
     <link href="/font/css/fontawesome.css" rel="stylesheet" />
     <link href="/font/css/brands.css" rel="stylesheet" />
     <link href="/font/css/solid.css" rel="stylesheet" />
   </head>
   <!-- Arka plan teması koyu renk -->
   <body class="bg-dark">
-<<<<<<< Updated upstream
-=======
-    <style>
-      li:hover {
-        background-color: #674904;
-        transition: 0.5s;
-        border-radius: 10px;
-      }
-      .search-box {
-        width: fit-content;
-        height: fit-content;
-        position: relative;
-      }
-      .input-search {
-        height: 50px;
-        width: 50px;
-        border-style: none;
-        padding: 10px;
-        font-size: 18px;
-        letter-spacing: 2px;
-        outline: none;
-        border-radius: 25px;
-        transition: all 0.5s ease-in-out;
-        background-color: #22a6b3;
-        padding-right: 40px;
-        color: #fff;
-      }
-      .input-search::placeholder {
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 18px;
-        letter-spacing: 2px;
-        font-weight: 100;
-      }
-      .btn-search {
-        width: 50px;
-        height: 50px;
-        border-style: none;
-        font-size: 20px;
-        font-weight: bold;
-        outline: none;
-        cursor: pointer;
-        border-radius: 50%;
-        position: absolute;
-        right: 0px;
-        color: #ffffff;
-        background-color: transparent;
-        pointer-events: painted;
-      }
-      .btn-search:focus ~ .input-search {
-        width: 300px;
-        border-radius: 0px;
-        background-color: transparent;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-        transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
-      }
-      .input-search:focus {
-        width: 300px;
-        border-radius: 0px;
-        background-color: transparent;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-        transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
-      }
-    </style>
     <!-- Header -->
->>>>>>> Stashed changes
     <nav
       class="navbar navbar-expand navbar-dark bg-dark"
       aria-label="Second navbar example"
     >
       <div class="container-fluid">
-<<<<<<< Updated upstream
-        <!-- Sol üst köşede site adı -->
-=======
         <img
           src="/images/el.jpg"
           alt="logo"
@@ -105,7 +39,6 @@
             margin-right: 10px;
           "
         />
->>>>>>> Stashed changes
         <a class="navbar-brand" href="index.html"> Inspire.com </a>
         <button
           class="navbar-toggler"
@@ -118,23 +51,17 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
- 
+
         <div class="collapse navbar-collapse" id="navbarsExample02">
           <ul class="navbar-nav me-auto">
-            
-            <!-- Biyografi sayfasına giden menü öğesi -->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="album.html">
                 Biyografi
               </a>
             </li>
-
-            <!-- Kitaplar sayfasına giden menü öğesi -->
             <li class="nav-item">
               <a class="nav-link active" href="kitap.html"> Kitaplar </a>
             </li>
-
-            <!-- Belgesel ve Film sayfasına giden menü öğesi -->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="film.html">
                 Belgesel ve Film
@@ -152,7 +79,6 @@
         </div>
       </div>
     </nav>
-
     <!-- Sayfanın başındaki motivasyon yazısı -->
     <main>
       <section class="text-center">
@@ -183,7 +109,7 @@
     <div class="specialdiv">
       <div class="container">
         <!-- Kayan kitap yapısının okları -->
-        <div class="arrows"> 
+        <div class="arrows">
           <button class="arrow left" id="prev">&#10094;</button>
           <button class="arrow right" id="next">&#10095;</button>
         </div>
@@ -198,7 +124,7 @@
 
         <!-- Kayan kısımdaki kitaplar ve resimleri -->
         <div class="cards">
-          <label class="card" for="item-1" id="kitap-1"> 
+          <label class="card" for="item-1" id="kitap-1">
             <img src="images/görünmezKadınlar.jpg" alt="kitap" />
           </label>
 
@@ -209,7 +135,8 @@
           <label class="card" for="item-3" id="kitap-3">
             <img
               src="https://upload.wikimedia.org/wikipedia/tr/6/6b/Bin_Muhte%C5%9Fem_G%C3%BCne%C5%9F.jpg"
-              alt="kitap" />
+              alt="kitap"
+            />
           </label>
 
           <label class="card" for="item-4" id="kitap-4">
@@ -227,22 +154,17 @@
       </div>
     </div>
 
-<<<<<<< Updated upstream
     <!-- Açıklamalı kitap önerisi kısmı -->
-     <!-- Üstteki kısımdan farklı ayarlamalar yapmak için ayrı containerlara koyduk -->
+    <!-- Üstteki kısımdan farklı ayarlamalar yapmak için ayrı containerlara koyduk -->
     <div class="book-container">
       <div id="extra-books" class="book-grid">
         <!-- 1 -->
         <div class="book-card">
           <!-- Kitabın resmi -->
-=======
-    <div class="book-container">
-      <div id="extra-books" class="book-grid">
-        <div class="book-card">
->>>>>>> Stashed changes
           <img src="images/kadınVeİktidar.jpg" alt="Kadın ve İktidar" />
           <h2>Kadın ve İktidar: Bir Manifesto</h2>
-          <p>                <!-- Kitabın açıklaması -->
+          <p>
+            <!-- Kitabın açıklaması -->
             Mary Beard bu cesur kitabında sık sık kendisi de dâhil dünyadaki
             bütün kadınlara dil uzatan ve onları küçük düşürmeye çalışan kadın
             düşmanlarına ve internet saldırganlarına sesleniyor. Kadın
@@ -255,14 +177,12 @@
           </p>
         </div>
 
-<<<<<<< Updated upstream
-         <!-- 2 -->
-=======
->>>>>>> Stashed changes
+        <!-- 2 -->
         <div class="book-card">
           <img
             src="https://upload.wikimedia.org/wikipedia/tr/6/6b/Bin_Muhte%C5%9Fem_G%C3%BCne%C5%9F.jpg"
-            alt="Kadın ve İktidar"/>
+            alt="Kadın ve İktidar"
+          />
           <h2>Bin Muhteşem Güneş</h2>
           <p>
             Bin Muhteşem Güneş" (A Thousand Splendid Suns) Khaled Hosseini'nin
@@ -277,10 +197,7 @@
           </p>
         </div>
 
-<<<<<<< Updated upstream
-          <!-- 3 -->
-=======
->>>>>>> Stashed changes
+        <!-- 3 -->
         <div class="book-card">
           <img src="images/görünmezKadınlar.jpg" alt="Görünmez Kadınlar" />
           <h2>
@@ -299,10 +216,7 @@
           </p>
         </div>
 
-<<<<<<< Updated upstream
         <!-- 4 -->
-=======
->>>>>>> Stashed changes
         <div class="book-card">
           <img src="images/tariheYön.jpg" alt="Tarihe Yön Veren 100 Kadın" />
           <h2>Tarihe Yön Veren 100 Kadın</h2>
@@ -320,14 +234,12 @@
           </p>
         </div>
 
-<<<<<<< Updated upstream
         <!-- 5 -->
-=======
->>>>>>> Stashed changes
         <div class="book-card">
           <img
             src="images/asiKızlar.jpg"
-            alt="Asi Kızlara Uykudan Önce Hikâyeler"   />
+            alt="Asi Kızlara Uykudan Önce Hikâyeler"
+          />
           <h2>
             Asi Kızlara Uykudan Önce Hikâyeler:Türkiye’den 100 Olağanüstü
             Kadının Masalı
@@ -345,10 +257,7 @@
           </p>
         </div>
 
-<<<<<<< Updated upstream
         <!-- 6 -->
-=======
->>>>>>> Stashed changes
         <div class="book-card">
           <img src="images/kadınlarÜlkesi.jpg" alt="Kadınlar Ülkesi" />
           <h2>Kadınlar Ülkesi</h2>
@@ -364,10 +273,7 @@
           </p>
         </div>
 
-<<<<<<< Updated upstream
         <!-- 7 -->
-=======
->>>>>>> Stashed changes
         <div class="book-card">
           <img src="images/kendineAitBirOda.jpg" alt="Kendine Ait Bir Oda" />
           <h2>Kendine Ait Bir Oda</h2>
@@ -386,14 +292,12 @@
           </p>
         </div>
 
-<<<<<<< Updated upstream
         <!-- 8 -->
-=======
->>>>>>> Stashed changes
         <div class="book-card">
           <img
             src="images/kadınHakları.jpg"
-            alt="Kadın Haklarının Gerekçelendirilmesi"/>
+            alt="Kadın Haklarının Gerekçelendirilmesi"
+          />
           <h2>Kadın Haklarının Gerekçelendirilmesi</h2>
           <p>
             Mary Wollstonecraft (1759-1797): 38 yıl süren kısa ömrüne karşın,
@@ -406,15 +310,13 @@
             temel yapıtıdır.
           </p>
         </div>
-<<<<<<< Updated upstream
 
         <!-- 9 -->
-=======
->>>>>>> Stashed changes
         <div class="book-card">
           <img
             src="https://cdn.kobo.com/book-images/d7080d75-afd2-40f0-b4bd-ef352dac3583/1200/1200/False/tarihi-degistiren-kadnlar.jpg"
-            alt="Kadın ve İktidar"/>
+            alt="Kadın ve İktidar"
+          />
           <h2>Tarihi Değiştiren Kadınlar</h2>
           <p>
             Antik çağlardan modern döneme kadar farklı zaman dilimlerinden
@@ -428,10 +330,7 @@
           </p>
         </div>
 
-<<<<<<< Updated upstream
         <!-- 10 -->
-=======
->>>>>>> Stashed changes
         <div class="book-card">
           <img src="images/kurtlarlaKoşan.jpg" alt="Kurtlarla Koşan Kadınlar" />
           <h2>Kurtlarla Koşan Kadınlar</h2>
@@ -450,10 +349,7 @@
           </p>
         </div>
 
-<<<<<<< Updated upstream
         <!-- 11 -->
-=======
->>>>>>> Stashed changes
         <div class="book-card">
           <img src="images/küçükFeminist.jpg" alt="Küçük Feministin Kitabı" />
           <h2>Küçük Feministin Kitabı</h2>
@@ -472,10 +368,7 @@
           </p>
         </div>
 
-<<<<<<< Updated upstream
         <!-- 12 -->
-=======
->>>>>>> Stashed changes
         <div class="book-card">
           <img src="images/kadınlarDaVardır.jpg" alt="Kadınlar da Vardır" />
           <h2>Kadınlar da Vardır</h2>
@@ -492,10 +385,7 @@
           </p>
         </div>
 
-<<<<<<< Updated upstream
         <!-- 13 -->
-=======
->>>>>>> Stashed changes
         <div class="book-card">
           <img src="images/ikinciCinsiyet.jpg" alt="İkinci Cinsiyet" />
           <h2>İkinci Cinsiyet</h2>
@@ -515,10 +405,7 @@
           </p>
         </div>
 
-<<<<<<< Updated upstream
-         <!-- 14 -->
-=======
->>>>>>> Stashed changes
+        <!-- 14 -->
         <div class="book-card">
           <img src="images/weShouldAll.jpg" alt="We Should All Be Feminists" />
           <h2>We Should All Be Feminists</h2>
@@ -539,8 +426,7 @@
       </div>
     </div>
 
-
-    <!-- Footer -->
+    <!-- footer -->
     <footer class="py-3 my-4 border-top">
       <div
         class="d-flex align-items-center justify-content-evenly"
@@ -560,7 +446,6 @@
             />
           </svg>
 
-          <!-- Git-hub hesaplarımızın linki -->
           <div class="d-flex flex-column align-items-center">
             <a
               href="https://github.com/aysegulsum"
@@ -591,8 +476,7 @@
               d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
             />
           </svg>
-          
-          <!-- Linkedin hesaplarımızın linki -->
+
           <div class="d-flex flex-column align-items-center m-lg-2">
             <a
               href="https://www.linkedin.com/in/ay%C5%9Fe-g%C3%BCls%C3%BCm-eren-4375701bb/"
@@ -624,7 +508,6 @@
             />
           </svg>
 
-          <!-- Mail hesaplarımızın linki -->
           <div class="d-flex flex-column align-items-center m-lg-2">
             <a
               href="mailto:info@example.com"
@@ -639,7 +522,6 @@
           </div>
         </div>
 
-        <!-- En sağdaki balon resmi -->
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="55"
@@ -667,9 +549,30 @@
             repeatCount="indefinite"
           />
         </svg>
+        <style>
+          @keyframes bounce {
+            0%,
+            20%,
+            50% {
+              transform: translateY(0);
+            }
+            40% {
+              transform: translateY(-30px);
+            }
+            60% {
+              transform: translateY(-15px);
+            }
+            80% {
+              transform: translateY(-25px);
+            }
+            100% {
+              transform: translateY(-15px);
+            }
+          }
+        </style>
       </div>
     </footer>
-     
+
     <!-- Script dosyasının bağlantısı -->
     <script src="kitap.js"></script>
 

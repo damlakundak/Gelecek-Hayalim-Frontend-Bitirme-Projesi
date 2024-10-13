@@ -1,4 +1,3 @@
-
 // "prev" butonunu seçer
 const prevButton = document.getElementById("prev");
 // "next" butonunu seçer

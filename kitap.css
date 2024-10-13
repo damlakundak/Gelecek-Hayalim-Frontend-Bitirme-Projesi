@@ -90,7 +90,7 @@ html, body {
   transition: background .4s ease-in;
   
   &.blue {
-    background-color: #d00c0c;
+    background-color: #428aa6;
   }
 }
 
@@ -251,14 +251,9 @@ img {
     outline: none;
 }
 
-<<<<<<< Updated upstream
 /* Kitap kartlarının düzeni */
 .book-container {
   margin-top: 50px; /* Kitapların üstüne boşluk bırakır */
-=======
-.book-container {
-  margin-top: 50px; /* Kitapların üstüne biraz boşluk bırak */
->>>>>>> Stashed changes
   padding: 20px; /* Kenar boşluğu */
   display: flex;
   flex-wrap: wrap;
@@ -272,14 +267,9 @@ img {
   width: 200vw;  /* Genişliği sayfanın tamamı kadar yapar */
 }
 
-<<<<<<< Updated upstream
 /* Kitap kartları ve içeriği */
 .book-card {
   background-color: #f8f9fa;   /* Arka plan rengi */
-=======
-.book-card {
-  background-color: #f8f9fa; /* Arka plan rengi */
->>>>>>> Stashed changes
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: calc(25% - 40px);   /* Kart genişliği, 4 kart yan yana */
@@ -290,22 +280,14 @@ img {
   transition: transform 0.3s ease;
 }
 
-<<<<<<< Updated upstream
 /* Kitap resmi */
 .book-card img {
   max-width: 100%;   /* Resmin kartın genişliğini doldurmasını sağlar */
-=======
-.book-card img {
-  max-width: 100%; /* Resmin kartın genişliğini doldurmasını sağlar */
->>>>>>> Stashed changes
   border-radius: 10px;
   max-height: 350px;
 }
 
-<<<<<<< Updated upstream
 /* Kitap açıklaması */
-=======
->>>>>>> Stashed changes
 .book-card h2 {
   font-size: 1.25rem;
   margin-top: 15px;
@@ -316,12 +298,7 @@ img {
   color: #666;
 }
 
-<<<<<<< Updated upstream
 /* Üzerine gelindiğinde kartı büyütür */
 .book-card:hover {
   transform: scale(1.2); 
-=======
-.book-card:hover {
-  transform: scale(1.3); /* Üzerine gelindiğinde kartı büyüt */
->>>>>>> Stashed changes
 } 
