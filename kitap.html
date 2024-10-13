@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="kitap.css" />
   </head>
-  <body>
+  <body class="bg-dark">
     <style>
       li:hover {
         background-color: #674904;
@@ -121,18 +121,25 @@
     </nav>
 
     <main>
-      <section class="text-center container">
-        <div class="row py-lg-5">
-          <div class="col-lg-10 col-md-10 mx-auto">
-            <h1 class="fw-light">Güçlü Kadınlar</h1>
-            <h1 class="fw-light">İlham Verici Hikayeler</h1>
-            <p class="lead text-body-secondary">
-              Başarıya giden yolda karşılaştıkları engelleri aşan kadınların ilham verici hikayelerini keşfedin. 
-              Bu kitaplar, iş dünyasında zorluklarla mücadele eden, azim, kararlılık ve yaratıcılıkla başarıya ulaşan 
-              güçlü kadınların deneyimlerini gözler önüne seriyor. Her bir sayfa, cesaretin, direncin ve değişim yaratma 
-              gücünün gücünü anlatıyor. Bu hikayelerle kendinizi cesur kadınların mücadele dolu yolculuklarına kaptıracak, 
-              onların deneyimlerinden ilham alarak kendi potansiyelinizi keşfetme yolunda adım atacaksınız. Çünkü gerçek 
-              başarı, sadece beceride değil, aynı zamanda cesurca risk alıp zorlukları aşma gücünde yatar.
+      <section class="text-center">
+        <div class="row py-lg-5 justify-content-around">
+          <div class="col-lg-10 col-md-10">
+            <h1 class="fw-light" style="color: #ffffff">Güçlü Kadınlar</h1>
+            <h1 class="fw-light" style="color: #ffffff">
+              İlham Verici Hikayeler
+            </h1>
+            <p class="lead" style="color: #ffffff; opacity: 0.5">
+              Başarıya giden yolda karşılaştıkları engelleri aşan kadınların
+              ilham verici hikayelerini keşfedin. Bu kitaplar, iş dünyasında
+              zorluklarla mücadele eden, azim, kararlılık ve yaratıcılıkla
+              başarıya ulaşan güçlü kadınların deneyimlerini gözler önüne
+              seriyor. Her bir sayfa, cesaretin, direncin ve değişim yaratma
+              gücünün gücünü anlatıyor. Bu hikayelerle kendinizi cesur
+              kadınların mücadele dolu yolculuklarına kaptıracak, onların
+              deneyimlerinden ilham alarak kendi potansiyelinizi keşfetme
+              yolunda adım atacaksınız. Çünkü gerçek başarı, sadece beceride
+              değil, aynı zamanda cesurca risk alıp zorlukları aşma gücünde
+              yatar.
             </p>
           </div>
         </div>
@@ -140,9 +147,7 @@
     </main>
 
     <div class="specialdiv">
-
       <div class="container">
-
         <div class="arrows">
           <button class="arrow left" id="prev">&#10094;</button>
           <button class="arrow right" id="next">&#10095;</button>
@@ -157,180 +162,357 @@
 
         <div class="cards">
           <label class="card" for="item-1" id="song-1">
-            <img
-              src="images/görünmezKadınlar.jpg"
-              alt="song"
-            />
+            <img src="images/görünmezKadınlar.jpg" alt="song" />
           </label>
           <label class="card" for="item-2" id="song-2">
-            <img
-              src="images/kadınVeİktidar.jpg"
-              alt="song"
-            />
+            <img src="images/kadınVeİktidar.jpg" alt="song" />
           </label>
           <label class="card" for="item-3" id="song-3">
-            <img
-              src="images/tariheYön.jpg"
-              alt="song"
-            />
+            <img src="images/tariheYön.jpg" alt="song" />
           </label>
           <label class="card" for="item-4" id="song-4">
-            <img
-              src="images/asiKızlar.jpg"
-              alt="song"
-            />
+            <img src="images/asiKızlar.jpg" alt="song" />
           </label>
 
           <label class="card" for="item-5" id="song-5">
-            <img
-              src="images/kadınlarÜlkesi.jpg"
-              alt="song"
-            />
+            <img src="images/kadınlarÜlkesi.jpg" alt="song" />
           </label>
 
           <label class="card" for="item-6" id="song-6">
-            <img
-              src="images/kendineAitBirOda.jpg"
-              alt="song"
-            />
+            <img src="images/kendineAitBirOda.jpg" alt="song" />
           </label>
-        </div>   
-      </div>
-      </div>
-        
-      <div class="movie-container">
-        <div id="extra-movies" class="movie-grid">
-          <div class="movie-card">
-            <img src="images/kadınVeİktidar.jpg" alt="Kadın ve İktidar">
-            <h2>Kadın ve İktidar: Bir Manifesto</h2>
-            <p>Mary Beard bu cesur kitabında sık sık kendisi de dâhil dünyadaki bütün kadınlara dil uzatan ve onları 
-              küçük düşürmeye çalışan kadın düşmanlarına ve internet saldırganlarına sesleniyor. Kadın düşmanlığının 
-              izlerini antik köklerine kadar takip ederek cinsiyet tuzaklarını ve zamanın başlangıcından beri güçlü 
-              kadınlara yapılan haksızlıkları inceliyor.Homeros’un Odysseia’sına kadar uzanarak kadınların günlük 
-              yaşamda liderlik rollerinden uzak tutulduğuna, topluluklara hitap etme hakkının erkeklerin tekelinde olduğuna dikkat çekiyor.  </p>
-          </div>
-         
-          <div class="movie-card">
-            <img src="images/görünmezKadınlar.jpg" alt="Görünmez Kadınlar">
-            <h2>Görünmez Kadınlar: Erkekler İçin Tasarlanmış Bir Dünyada Veri Yanlılığı İle Yaşamak</h2>
-            <p>Veri, modern dünyanın temelini oluşturur. Ekonomik kalkınmadan sağlık hizmetlerine, eğitim ve 
-              kamu politikalarına kadar kaynakları tahsis etmek ve önemli kararlar almak için sayılara güveniriz. 
-              Veri kullanımı günlük yaşantımızda fazlasıyla yer kaplasa da bu veriler; cinsiyetleri, bedensel 
-              farklılıkları ve alışkanlıkları hesaba katmakta başarısızdır. Erkekleri merkeze koyup, kadınları 
-              ötekileştiren bu veri yanlılığı nedeniyle sistemlerimiz önyargı ve ayrımcılıkla dolu.</p>
-          </div>
-          
-          <div class="movie-card">
-            <img src="images/tariheYön.jpg" alt="Tarihe Yön Veren 100 Kadın">
-            <h2>Tarihe Yön Veren 100 Kadın</h2>
-            <p>Bu eserde yer alan “Tarihe Yön Veren 100 Kadın”ın ortak özelliği de hepsinin “dirayetli” ve “yürekli”
-               oluşudur. Herkesten farklı olmak büyük cesaret ister, hedefe kilitlenmek ister, yoğun bir çalışma
-                ister, geniş bir hayal gücüne sımsıkı sarılabilmek ister; sessiz sedasız, hiçbir engel tanımadan 
-                ilerleme azmi ister... Osmanlı Sarayı’nda; Harem’den Macar Kralı’na mektup yazan Hürrem Sultan gibi, 
-                İsa’nın annesi Meryem gibi, savaş pilotu Sabiha Gökçen gibi, moda dünyasında fırtınalar estiren Coco Chanel gibi, 
-                eline balta alıp düşmana saldıran Nene Hatun gibi onlarca kadın topluma yol göstermiş, onları yönlendirmiş ve cesaretlendirmişler.</p>
-          </div>
-          
-          <div class="movie-card">
-            <img src="images/asiKızlar.jpg" alt="Asi Kızlara Uykudan Önce Hikâyeler">
-            <h2>Asi Kızlara Uykudan Önce Hikâyeler:Türkiye’den 100 Olağanüstü Kadının Masalı</h2>
-            <p>Doktorlar, öğretmenler, mucitler, sporcular, yazarlar, savaş kahramanları, bilim insanları…
-              Aralarında Müzeyyen Senar, Nene Hatun, Ayşen Gruda, Leylâ Erbil
-              gibi isimlerin de olduğu, Türkiye’nin her yerinden, her köşesinden yüz olağanüstü kadın. 
-              Kimi toplumsal önyargıları yıkmış, kimi fiziksel engellerin üstesinden gelmiş, birbirinden zeki, 
-              birbirinden başarılı kadınlar. Bazıları geçmişin tozlu sayfaları arasından çıkıp geldi, bazıları 
-              daha kendi tarihlerini yazmaya yeni başladı. Ortak noktaları belli: Hepsi hayal etti, çalıştı, 
-              ne olursa olsun pes etmedi ve başardı.
-              </p>
-          </div>
-
-          <div class="movie-card">
-            <img src="images/kadınlarÜlkesi.jpg" alt="Kadınlar Ülkesi">
-            <h2>Kadınlar Ülkesi</h2>
-            <p>Charlotte Perkins Gilman yaşadığı dönemin önde gelen hümanistlerinden ve kadın hakları savunucularından biri 
-              olmasının yanında feminist edebiyatın en önemli erken dönem temsilcilerinden. Yazıldıktan yaklaşık 65 sene sonra 
-              kitap formatında yayımlanabilen Kadınlar Ülkesi ise feminist ütopyanın ilk örneklerinden. Toplumsal roller cinsiyete göre 
-              belirlenebilir mi? Kadınlık ve erkeklik değişmez kavramlar mıdır? Kadınlar Ülkesi, ataerkilliğe verilmiş nüktedan bir yanıt.</p>
-          </div>
-          
-          <div class="movie-card">
-            <img src="images/kendineAitBirOda.jpg" alt="Kendine Ait Bir Oda">
-            <h2>Kendine Ait Bir Oda</h2>
-            <p>Virginia Woolf'un 1928 yılında kapılarını kadınlara yeni açmakta olan Cambridge Üniversitesi'ndeki 
-              kız öğrencilere hitaben yaptığı konuşması üzerine şekillenmiştir. İngiltere'de kadınların seçme ve seçilme hakkını elde 
-              etmelerinden bir yıl sonra yayımlanan kitap o tarihten günümüze feminizm tartışmalarının locus classicus'u olageldi. Jane Austen 
-              ve Charlotte Brontë'den, kadınların niçin bir Savaş ve Barış yazamadıklarına; Shakespeare'in hayali kız kardeşinden bugün de tartışılmaya 
-              devam eden kadının yoksulluğu ve namusu başlıklarına, yaratıcılığın doğasına kadar uzanan geniş bir yelpazede kalemini özgürce oynatan 
-              Woolf, kadınlara edebiyat alanında bir çıkış yolu gösteriyor.</p>
-          </div>
-          
-          <div class="movie-card">
-            <img src="images/kadınHakları.jpg" alt="Kadın Haklarının Gerekçelendirilmesi">
-            <h2>Kadın Haklarının Gerekçelendirilmesi</h2>
-            <p>Mary Wollstonecraft (1759-1797): 38 yıl süren kısa ömrüne karşın, erkek egemenliğindeki felsefe alanında yazdıklarıyla, 
-              kendinden sonraki yüzyılları kadın hakları konusunda derinden etkileyen bir 18. yüzyıl düşünürüdür. Dilimize ilk kez çevrilen
-               ve günümüzden 215 yıl önce yayımlanan Kadın Haklarının Gerekçelendirilmesi (1792) ise, bundan beş yıl sonra, geleceğin 
-               Frankenstein’ını yazacak kızı Mary [Shelley]’nin doğumundan 11 gün sonra ölen Wollstonecraft’ın en temel yapıtıdır.</p>
-          </div>
-          
-          <div class="movie-card">
-            <img src="images/kurtlarlaKoşan.jpg" alt="Kurtlarla Koşan Kadınlar">
-            <h2>Kurtlarla Koşan Kadınlar</h2>
-            <p>İnsanlık tarihi boyunca bastırılmış ve örselenmiş kadınların durumunu sosyal, kültürel ve ekonomik 
-              açıdan ele alan çok sayıda inceleme yapıldı. Her inceleme, kadınları tanımlama ve çözme açısından
-               çok farklı yöntemler önerdi. Bu önermelerin ne ölçüde kadınların doğasını ilişkin isabetli ve farklı
-                alternatifler olduğu ise tartışmalı. Clarissa P. Estes, Kurtlarla Koşan Kadınlar’da gerçekten farklı
-                 bir önermede bulunuyor, kadınlar için yalın, uygulanabilir ve doğal çözümler öneriyor. Kadınların çoğu zaman farkında olmadan içselleştirmek zorunda 
-                  bırakıldıkları eziklik ve yetersizlik duygusuna, bastırılmış cinsel güdülerine çok değişik bir malzemeden 
-                  yaklaşıyor: Masallar! </p>
-          </div>
-          
-          <div class="movie-card">
-            <img src="images/küçükFeminist.jpg" alt="Küçük Feministin Kitabı">
-            <h2>Küçük Feministin Kitabı</h2>
-            <p>Her kız çocuğu, okulda, sokakta, parkta, hayatının bir aşamasında erkeklerin egemen olduğu bir dünyada yaşadığını ve kendisine oğlanlardan başka bir biçimde muamele edildiğini fark eder. 
-              Feminist çocuk ve gençlik edebiyatının kült eserlerinden biri olan kitap, uzun yıllar dünyanın farklı yerlerindeki küçük kızlara ulaştı.
-              Bir gazete haberini okurken aydınlanma yaşar ve kadınlarla erkekler üzerine düşünmeye başlar. Sonra, gözlemlediği haksızlığa karşı neler yapabileceğini arkadaşlarıyla konuşmaya başlar.
-              Bu işler hep böyle miydi, bunun bir çaresi yok mudur, bu konuda hangi yazarlar, ne zaman, neler yazdılar? Sınıfta sözünü kesen oğlanlarla, kızlara kendilerini kötü hissettiren reklamlarla nasıl baş edebiliriz? </p>
-          </div>
-
-          <div class="movie-card">
-            <img src="images/kadınlarDaVardır.jpg" alt="Kadınlar da Vardır">
-            <h2>Kadınlar da Vardır</h2>
-            <p>Kadın olmak hep "kaybetmek"le eş mi tutulmalıdır? Kadınların yaşamda tek başlarına var olma istekleri
-               olamaz mı? Ya kendilerini unutup hayatlarını ailelerine adayan kadınlar bir gün "bu yaşamda ben de 
-               varım" demeye başlarlarsa? Erendiz Atasü, Kadınlar da Vardır adlı kitabında sekiz farklı kadını anlatıyor. 
-               Yaşları, eğitim durumları, aile hayatları ve ekonomik gelirleri birbirinden çok farklı olan bu kadınlar 
-               aslında ortak bir noktada; hayatta biraz daha fazla söz sahibi olma, kimliklerini, haklarını, aşklarını doya 
-               doya yaşama, ezilmeme ve yaşamdan dışlanmama çabalarında birleşiyorlar. </p>
-          </div>
-
-          <div class="movie-card">
-            <img src="images/ikinciCinsiyet.jpg" alt="İkinci Cinsiyet">
-            <h2>İkinci Cinsiyet</h2>
-            <p>Kadın doğulmaz, kadın olunur. Bu meşhur cümle, İkinci Cinsiyet’in odak noktasını oluşturur. 
-              Simone de Beauvoir böylece cinsiyet meselesini doğanın alanından çıkarıp kültürün ve tarihin alanına 
-              yerleştirirken, bir anlamda toplumsal cinsiyet tartışmasını da erkenden başlatmış olur. Bunu yaparken 
-              hem varoluşçuluk, fenomenoloji ve yapısalcı antropoloji gibi kendi çağdaşı olan düşünceleri hem de Hegel 
-              ve Marx gibi felsefe klasiklerini cinsiyet düzleminde yeniden okur. Beauvoir’a göre kadın, kendine has bir 
-              durum tarafından, tarih boyunca farklı koşullar altında yeniden üretilen Başkalık durumu tarafından 
-              belirlenmiştir: Kadın ile erkek arasında eşitsizlik vardır, kadın ikinci cinsiyettir ve hem bireysel hem de 
-              toplumsal bakımdan ezilmiştir.  </p>
-          </div>
-
-          <div class="movie-card">
-            <img src="images/weShouldAll.jpg" alt="We Should All Be Feminists">
-            <h2>We Should All Be Feminists</h2>
-            <p>Adichie burada mizah ve nezaketle okuyuculara yirmi birinci yüzyıl için feminizmin benzersiz bir tanımını sunuyor; 
-              kökleri kapsayıcılık ve farkındalığa dayalı. Hayatın her kesiminden okuyucunun cinsel politikaların sıklıkla maskelenen 
-              gerçeklerini daha iyi anlamalarına yardımcı olmak amacıyla yalnızca bariz ayrımcılığa değil, aynı zamanda kadınları dünya 
-              çapında ötekileştiren daha sinsi, kurumsal davranışlara da ışık tutuyor. Baştan sona, ABD'de, memleketi Nijerya'da ve yurt 
-              dışında kendi deneyimlerinden geniş ölçüde yararlanıyor ve cinsiyet ayrımının neden hem kadınlar hem de erkekler için zararlı 
-              olduğuna dair ustaca incelikli bir açıklama sunuyor. </p>
-          </div>
-
         </div>
       </div>
+    </div>
+
+    <div class="movie-container">
+      <div id="extra-movies" class="movie-grid">
+        <div class="movie-card">
+          <img src="images/kadınVeİktidar.jpg" alt="Kadın ve İktidar" />
+          <h2>Kadın ve İktidar: Bir Manifesto</h2>
+          <p>
+            Mary Beard bu cesur kitabında sık sık kendisi de dâhil dünyadaki
+            bütün kadınlara dil uzatan ve onları küçük düşürmeye çalışan kadın
+            düşmanlarına ve internet saldırganlarına sesleniyor. Kadın
+            düşmanlığının izlerini antik köklerine kadar takip ederek cinsiyet
+            tuzaklarını ve zamanın başlangıcından beri güçlü kadınlara yapılan
+            haksızlıkları inceliyor.Homeros’un Odysseia’sına kadar uzanarak
+            kadınların günlük yaşamda liderlik rollerinden uzak tutulduğuna,
+            topluluklara hitap etme hakkının erkeklerin tekelinde olduğuna
+            dikkat çekiyor.
+          </p>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/görünmezKadınlar.jpg" alt="Görünmez Kadınlar" />
+          <h2>
+            Görünmez Kadınlar: Erkekler İçin Tasarlanmış Bir Dünyada Veri
+            Yanlılığı İle Yaşamak
+          </h2>
+          <p>
+            Veri, modern dünyanın temelini oluşturur. Ekonomik kalkınmadan
+            sağlık hizmetlerine, eğitim ve kamu politikalarına kadar kaynakları
+            tahsis etmek ve önemli kararlar almak için sayılara güveniriz. Veri
+            kullanımı günlük yaşantımızda fazlasıyla yer kaplasa da bu veriler;
+            cinsiyetleri, bedensel farklılıkları ve alışkanlıkları hesaba
+            katmakta başarısızdır. Erkekleri merkeze koyup, kadınları
+            ötekileştiren bu veri yanlılığı nedeniyle sistemlerimiz önyargı ve
+            ayrımcılıkla dolu.
+          </p>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/tariheYön.jpg" alt="Tarihe Yön Veren 100 Kadın" />
+          <h2>Tarihe Yön Veren 100 Kadın</h2>
+          <p>
+            Bu eserde yer alan “Tarihe Yön Veren 100 Kadın”ın ortak özelliği de
+            hepsinin “dirayetli” ve “yürekli” oluşudur. Herkesten farklı olmak
+            büyük cesaret ister, hedefe kilitlenmek ister, yoğun bir çalışma
+            ister, geniş bir hayal gücüne sımsıkı sarılabilmek ister; sessiz
+            sedasız, hiçbir engel tanımadan ilerleme azmi ister... Osmanlı
+            Sarayı’nda; Harem’den Macar Kralı’na mektup yazan Hürrem Sultan
+            gibi, İsa’nın annesi Meryem gibi, savaş pilotu Sabiha Gökçen gibi,
+            moda dünyasında fırtınalar estiren Coco Chanel gibi, eline balta
+            alıp düşmana saldıran Nene Hatun gibi onlarca kadın topluma yol
+            göstermiş, onları yönlendirmiş ve cesaretlendirmişler.
+          </p>
+        </div>
+
+        <div class="movie-card">
+          <img
+            src="images/asiKızlar.jpg"
+            alt="Asi Kızlara Uykudan Önce Hikâyeler"
+          />
+          <h2>
+            Asi Kızlara Uykudan Önce Hikâyeler:Türkiye’den 100 Olağanüstü
+            Kadının Masalı
+          </h2>
+          <p>
+            Doktorlar, öğretmenler, mucitler, sporcular, yazarlar, savaş
+            kahramanları, bilim insanları… Aralarında Müzeyyen Senar, Nene
+            Hatun, Ayşen Gruda, Leylâ Erbil gibi isimlerin de olduğu,
+            Türkiye’nin her yerinden, her köşesinden yüz olağanüstü kadın. Kimi
+            toplumsal önyargıları yıkmış, kimi fiziksel engellerin üstesinden
+            gelmiş, birbirinden zeki, birbirinden başarılı kadınlar. Bazıları
+            geçmişin tozlu sayfaları arasından çıkıp geldi, bazıları daha kendi
+            tarihlerini yazmaya yeni başladı. Ortak noktaları belli: Hepsi hayal
+            etti, çalıştı, ne olursa olsun pes etmedi ve başardı.
+          </p>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/kadınlarÜlkesi.jpg" alt="Kadınlar Ülkesi" />
+          <h2>Kadınlar Ülkesi</h2>
+          <p>
+            Charlotte Perkins Gilman yaşadığı dönemin önde gelen
+            hümanistlerinden ve kadın hakları savunucularından biri olmasının
+            yanında feminist edebiyatın en önemli erken dönem temsilcilerinden.
+            Yazıldıktan yaklaşık 65 sene sonra kitap formatında yayımlanabilen
+            Kadınlar Ülkesi ise feminist ütopyanın ilk örneklerinden. Toplumsal
+            roller cinsiyete göre belirlenebilir mi? Kadınlık ve erkeklik
+            değişmez kavramlar mıdır? Kadınlar Ülkesi, ataerkilliğe verilmiş
+            nüktedan bir yanıt.
+          </p>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/kendineAitBirOda.jpg" alt="Kendine Ait Bir Oda" />
+          <h2>Kendine Ait Bir Oda</h2>
+          <p>
+            Virginia Woolf'un 1928 yılında kapılarını kadınlara yeni açmakta
+            olan Cambridge Üniversitesi'ndeki kız öğrencilere hitaben yaptığı
+            konuşması üzerine şekillenmiştir. İngiltere'de kadınların seçme ve
+            seçilme hakkını elde etmelerinden bir yıl sonra yayımlanan kitap o
+            tarihten günümüze feminizm tartışmalarının locus classicus'u
+            olageldi. Jane Austen ve Charlotte Brontë'den, kadınların niçin bir
+            Savaş ve Barış yazamadıklarına; Shakespeare'in hayali kız
+            kardeşinden bugün de tartışılmaya devam eden kadının yoksulluğu ve
+            namusu başlıklarına, yaratıcılığın doğasına kadar uzanan geniş bir
+            yelpazede kalemini özgürce oynatan Woolf, kadınlara edebiyat
+            alanında bir çıkış yolu gösteriyor.
+          </p>
+        </div>
+
+        <div class="movie-card">
+          <img
+            src="images/kadınHakları.jpg"
+            alt="Kadın Haklarının Gerekçelendirilmesi"
+          />
+          <h2>Kadın Haklarının Gerekçelendirilmesi</h2>
+          <p>
+            Mary Wollstonecraft (1759-1797): 38 yıl süren kısa ömrüne karşın,
+            erkek egemenliğindeki felsefe alanında yazdıklarıyla, kendinden
+            sonraki yüzyılları kadın hakları konusunda derinden etkileyen bir
+            18. yüzyıl düşünürüdür. Dilimize ilk kez çevrilen ve günümüzden 215
+            yıl önce yayımlanan Kadın Haklarının Gerekçelendirilmesi (1792) ise,
+            bundan beş yıl sonra, geleceğin Frankenstein’ını yazacak kızı Mary
+            [Shelley]’nin doğumundan 11 gün sonra ölen Wollstonecraft’ın en
+            temel yapıtıdır.
+          </p>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/kurtlarlaKoşan.jpg" alt="Kurtlarla Koşan Kadınlar" />
+          <h2>Kurtlarla Koşan Kadınlar</h2>
+          <p>
+            İnsanlık tarihi boyunca bastırılmış ve örselenmiş kadınların
+            durumunu sosyal, kültürel ve ekonomik açıdan ele alan çok sayıda
+            inceleme yapıldı. Her inceleme, kadınları tanımlama ve çözme
+            açısından çok farklı yöntemler önerdi. Bu önermelerin ne ölçüde
+            kadınların doğasını ilişkin isabetli ve farklı alternatifler olduğu
+            ise tartışmalı. Clarissa P. Estes, Kurtlarla Koşan Kadınlar’da
+            gerçekten farklı bir önermede bulunuyor, kadınlar için yalın,
+            uygulanabilir ve doğal çözümler öneriyor. Kadınların çoğu zaman
+            farkında olmadan içselleştirmek zorunda bırakıldıkları eziklik ve
+            yetersizlik duygusuna, bastırılmış cinsel güdülerine çok değişik bir
+            malzemeden yaklaşıyor: Masallar!
+          </p>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/küçükFeminist.jpg" alt="Küçük Feministin Kitabı" />
+          <h2>Küçük Feministin Kitabı</h2>
+          <p>
+            Her kız çocuğu, okulda, sokakta, parkta, hayatının bir aşamasında
+            erkeklerin egemen olduğu bir dünyada yaşadığını ve kendisine
+            oğlanlardan başka bir biçimde muamele edildiğini fark eder. Feminist
+            çocuk ve gençlik edebiyatının kült eserlerinden biri olan kitap,
+            uzun yıllar dünyanın farklı yerlerindeki küçük kızlara ulaştı. Bir
+            gazete haberini okurken aydınlanma yaşar ve kadınlarla erkekler
+            üzerine düşünmeye başlar. Sonra, gözlemlediği haksızlığa karşı neler
+            yapabileceğini arkadaşlarıyla konuşmaya başlar. Bu işler hep böyle
+            miydi, bunun bir çaresi yok mudur, bu konuda hangi yazarlar, ne
+            zaman, neler yazdılar? Sınıfta sözünü kesen oğlanlarla, kızlara
+            kendilerini kötü hissettiren reklamlarla nasıl baş edebiliriz?
+          </p>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/kadınlarDaVardır.jpg" alt="Kadınlar da Vardır" />
+          <h2>Kadınlar da Vardır</h2>
+          <p>
+            Kadın olmak hep "kaybetmek"le eş mi tutulmalıdır? Kadınların yaşamda
+            tek başlarına var olma istekleri olamaz mı? Ya kendilerini unutup
+            hayatlarını ailelerine adayan kadınlar bir gün "bu yaşamda ben de
+            varım" demeye başlarlarsa? Erendiz Atasü, Kadınlar da Vardır adlı
+            kitabında sekiz farklı kadını anlatıyor. Yaşları, eğitim durumları,
+            aile hayatları ve ekonomik gelirleri birbirinden çok farklı olan bu
+            kadınlar aslında ortak bir noktada; hayatta biraz daha fazla söz
+            sahibi olma, kimliklerini, haklarını, aşklarını doya doya yaşama,
+            ezilmeme ve yaşamdan dışlanmama çabalarında birleşiyorlar.
+          </p>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/ikinciCinsiyet.jpg" alt="İkinci Cinsiyet" />
+          <h2>İkinci Cinsiyet</h2>
+          <p>
+            Kadın doğulmaz, kadın olunur. Bu meşhur cümle, İkinci Cinsiyet’in
+            odak noktasını oluşturur. Simone de Beauvoir böylece cinsiyet
+            meselesini doğanın alanından çıkarıp kültürün ve tarihin alanına
+            yerleştirirken, bir anlamda toplumsal cinsiyet tartışmasını da
+            erkenden başlatmış olur. Bunu yaparken hem varoluşçuluk,
+            fenomenoloji ve yapısalcı antropoloji gibi kendi çağdaşı olan
+            düşünceleri hem de Hegel ve Marx gibi felsefe klasiklerini cinsiyet
+            düzleminde yeniden okur. Beauvoir’a göre kadın, kendine has bir
+            durum tarafından, tarih boyunca farklı koşullar altında yeniden
+            üretilen Başkalık durumu tarafından belirlenmiştir: Kadın ile erkek
+            arasında eşitsizlik vardır, kadın ikinci cinsiyettir ve hem bireysel
+            hem de toplumsal bakımdan ezilmiştir.
+          </p>
+        </div>
+
+        <div class="movie-card">
+          <img src="images/weShouldAll.jpg" alt="We Should All Be Feminists" />
+          <h2>We Should All Be Feminists</h2>
+          <p>
+            Adichie burada mizah ve nezaketle okuyuculara yirmi birinci yüzyıl
+            için feminizmin benzersiz bir tanımını sunuyor; kökleri kapsayıcılık
+            ve farkındalığa dayalı. Hayatın her kesiminden okuyucunun cinsel
+            politikaların sıklıkla maskelenen gerçeklerini daha iyi anlamalarına
+            yardımcı olmak amacıyla yalnızca bariz ayrımcılığa değil, aynı
+            zamanda kadınları dünya çapında ötekileştiren daha sinsi, kurumsal
+            davranışlara da ışık tutuyor. Baştan sona, ABD'de, memleketi
+            Nijerya'da ve yurt dışında kendi deneyimlerinden geniş ölçüde
+            yararlanıyor ve cinsiyet ayrımının neden hem kadınlar hem de
+            erkekler için zararlı olduğuna dair ustaca incelikli bir açıklama
+            sunuyor.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="py-3 my-4 border-top">
+      <div
+        class="d-flex align-items-center justify-content-evenly"
+        style="color: white"
+      >
+        <div class="d-flex flex-row align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-github"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+            />
+          </svg>
+
+          <div class="d-flex flex-column align-items-center">
+            <a
+              href="https://github.com/aysegulsum"
+              class="text-white"
+              style="margin: 5px"
+            >
+              aysegulsum
+            </a>
+            <a
+              href="https://github.com/damlakundak"
+              class="text-white"
+              style="margin: 5px"
+            >
+              damlakundak
+            </a>
+          </div>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-linkedin"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+            />
+          </svg>
+
+          <div class="d-flex flex-column align-items-center m-lg-2">
+            <a
+              href="https://www.linkedin.com/in/ay%C5%9Fe-g%C3%BCls%C3%BCm-eren-4375701bb/"
+              class="text-white"
+              style="margin: 5px"
+            >
+              Ayşe Gülsüm Eren
+            </a>
+            <a
+              href="https://www.linkedin.com/in/damla-kundak-2027bb270/"
+              class="text-white"
+              style="margin: 5px"
+            >
+              Damla Kundak
+            </a>
+          </div>
+        </div>
+        <div class="d-flex flex-row align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-envelope"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+            />
+          </svg>
+
+          <div class="d-flex flex-column align-items-center m-lg-2">
+            <a
+              href="mailto:info@example.com"
+              class="text-white"
+              style="margin: 5px"
+            >
+              aaysegulsumm@gmail.com
+            </a>
+            <a href="mailto:info@example.com" class="text-white">
+              damlakundak@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="55"
+          height="55"
+          fill="currentColor"
+          class="bi bi-balloon-heart"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"
+          />
+        </svg>
+      </div>
+    </footer>
+
     <script src="kitap.js"></script>
 
     <script
