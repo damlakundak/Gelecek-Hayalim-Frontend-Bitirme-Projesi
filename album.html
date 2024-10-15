@@ -309,18 +309,41 @@
             <h1 class="fw-light">Güçlü Kadınlar</h1>
             <h1 class="fw-light">İlham Verici Hikayeler</h1>
 
-            <p class="lead text-body-secondary">
-              İş dünyasında zorluklara göğüs geren kadınların ilham verici
+            <p class="lead text-body-secondary" id="typing"></p>
+          </div>
+        </div>
+      </section>
+      <!--
+      İş dünyasında zorluklara göğüs geren kadınların ilham verici
               hikayelerini keşfedin. Bu platform, engelleri aşarak başarıya
               ulaşan güçlü kadınların deneyimlerini ve mücadelelerini paylaşmak
               amacıyla oluşturuldu. Her bir hikaye, azim, kararlılık ve
               yenilikçilikle dolu. Kendinizi bu cesur kadınların yolculuklarına
               kaptırın, onların deneyimlerinden ilham alın ve kendi
               potansiyelinizi keşfedin. Çünkü başarı, cesaretle başlar!
-            </p>
-          </div>
-        </div>
-      </section>
+      -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          typeWriter();
+        });
+        var i = 0;
+        var txt =
+          "İş dünyasında zorluklara göğüs geren kadınların ilham verici hikayelerini keşfedin. Bu platform, engelleri aşarak başarıya ulaşan güçlü kadınların deneyimlerini ve mücadelelerini paylaşmak amacıyla oluşturuldu. Her bir hikaye, azim, kararlılık ve yenilikçilikle dolu. Kendinizi bu cesur kadınların yolculuklarına kaptırın, onların deneyimlerinden ilham alın ve kendi potansiyelinizi keşfedin. Çünkü başarı, cesaretle başlar!";
+        var speed = 25; /* The speed/duration of the effect in milliseconds */
+
+        function typeWriter() {
+          document.getElementById("typing").innerHTML += txt.charAt(i);
+          i++;
+          if (txt.charAt(i) === ".") {
+            // wait for 1 second after each sentence
+            document.getElementById("typing").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, 1000);
+          } else if (i < txt.length) {
+            setTimeout(typeWriter, speed);
+          }
+        }
+      </script>
 
       <div class="album py-5">
         <div class="container">

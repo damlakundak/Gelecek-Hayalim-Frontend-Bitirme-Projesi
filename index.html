@@ -20,15 +20,35 @@
   <!-- Body -->
   <body class="bg-dark">
     <style>
-      body {
-        background-color: #343a40;
-        opacity: 1;
+      nav {
+        border-bottom: 2px solid #f6af78;
       }
-      .col:hover {
+      .info-card:hover {
         transform: scale(1.05);
         background-color: #e1ddd4;
         transition: 0.5s;
         border-radius: 20px;
+      }
+      .info-card-inner:hover {
+        animation: linear-gradient-cross 5s infinite linear;
+        border-radius: 20px;
+      }
+      @keyframes linear-gradient-cross {
+        0% {
+          background-color: #d1ad92;
+        }
+        25% {
+          background-color: #a0cbf3;
+        }
+        50% {
+          background-color: #d4e2d4;
+        }
+        75% {
+          background-color: #ffcacc;
+        }
+        100% {
+          background-color: #dbc4f0;
+        }
       }
       li:hover {
         background-color: #674904;
@@ -88,6 +108,19 @@
         background-color: transparent;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+      }
+      .carousel-inner {
+        height: 100%;
+      }
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: #000000;
+        border-radius: 50%;
+        padding: 10px;
+        color: #fff;
+      }
+      .carousel-indicators [data-bs-target] {
+        background-color: #ffffff !important;
       }
     </style>
     <!-- Header -->
@@ -173,7 +206,6 @@
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
-
         <button
           type="button"
           data-bs-target="#carouselExampleDark"
@@ -301,9 +333,9 @@
       class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
       style="padding: 10%"
     >
-      <div class="col">
+      <div class="col info-card">
         <div
-          class="h-100 p-5 border rounded-3"
+          class="h-100 p-5 border rounded-3 info-card-inner"
           style="
             background-color: #a0cbf3;
             display: flex;
@@ -331,9 +363,9 @@
           >
         </div>
       </div>
-      <div class="col">
+      <div class="col info-card">
         <div
-          class="h-100 p-5 border rounded-3"
+          class="h-100 p-5 border rounded-3 info-card-inner"
           style="
             background-color: #d4e2d4;
             display: flex;
@@ -354,9 +386,9 @@
           <a href="https://www.womentechmakers.com"> Siteye Git</a>
         </div>
       </div>
-      <div class="col">
+      <div class="col info-card">
         <div
-          class="h-100 p-5 border rounded-3"
+          class="h-100 p-5 border rounded-3 info-card-inner"
           style="
             background-color: #ffcacc;
             display: flex;
@@ -376,9 +408,9 @@
           <a href="https://girlswhocode.com/">Siteye Git</a>
         </div>
       </div>
-      <div class="col">
+      <div class="col info-card">
         <div
-          class="h-100 p-5 border rounded-3"
+          class="h-100 p-5 border rounded-3 info-card-inner"
           style="
             background-color: #dbc4f0;
             display: flex;
@@ -398,9 +430,9 @@
           <a href="https://www.wearebgc.org/old-home">Siteye Git</a>
         </div>
       </div>
-      <div class="col">
+      <div class="col info-card">
         <div
-          class="h-100 p-5 border rounded-3"
+          class="h-100 p-5 border rounded-3 info-card-inner"
           style="
             background-color: #c4d7ff;
             display: flex;
@@ -420,9 +452,9 @@
           <a href="https://cybersafefoundation.org/digigirls/">Siteye Git</a>
         </div>
       </div>
-      <div class="col">
+      <div class="col info-card">
         <div
-          class="h-100 p-5 border rounded-3"
+          class="h-100 p-5 border rounded-3 info-card-inner"
           style="
             background-color: #fff4b5;
             display: flex;
@@ -444,9 +476,9 @@
           <a href="https://anitab.org/">Siteye Git</a>
         </div>
       </div>
-      <div class="col">
+      <div class="col info-card">
         <div
-          class="h-100 p-5 border rounded-3"
+          class="h-100 p-5 border rounded-3 info-card-inner"
           style="
             background-color: #d1ad92;
             display: flex;
@@ -469,9 +501,9 @@
           >
         </div>
       </div>
-      <div class="col">
+      <div class="col info-card">
         <div
-          class="h-100 p-5 border rounded-3"
+          class="h-100 p-5 border rounded-3 info-card-inner"
           style="
             background-color: #f7badc;
             display: flex;
@@ -491,9 +523,9 @@
           <a href="https://she-plusplus.squarespace.com/">Siteye Git</a>
         </div>
       </div>
-      <div class="col">
+      <div class="col info-card">
         <div
-          class="h-100 p-5 border rounded-3"
+          class="h-100 p-5 border rounded-3 info-card-inner"
           style="
             background-color: #a3e3e7;
             display: flex;
@@ -512,9 +544,9 @@
           <a href="https://www.womeninstem.org/">Siteye Git</a>
         </div>
       </div>
-      <div class="col">
+      <div class="col info-card">
         <div
-          class="h-100 p-5 border rounded-3"
+          class="h-100 p-5 border rounded-3 info-card-inner"
           style="
             background-color: #d7f6b5f6;
             display: flex;
@@ -537,9 +569,9 @@
           >
         </div>
       </div>
-      <div class="col">
+      <div class="col info-card">
         <div
-          class="h-100 p-5 border rounded-3"
+          class="h-100 p-5 border rounded-3 info-card-inner"
           style="
             background-color: #ddb5f6f6;
             display: flex;
@@ -564,9 +596,9 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col info-card">
         <div
-          class="h-100 p-5 border rounded-3"
+          class="h-100 p-5 border rounded-3 info-card-inner"
           style="
             background-color: #ebaf85f6;
             display: flex;
