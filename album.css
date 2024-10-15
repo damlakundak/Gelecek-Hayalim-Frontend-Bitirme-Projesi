@@ -11,6 +11,9 @@
         height: 200px; /* Set a specific height */
         object-fit: cover; /* Ensures the image covers the circle */
       }
+      nav {
+        border-bottom: 2px solid #f6af78;
+      }
 
       .bd-placeholder-img {
         font-size: 1.125rem;
