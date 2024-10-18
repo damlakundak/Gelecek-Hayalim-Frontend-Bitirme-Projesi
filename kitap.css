@@ -9,7 +9,9 @@ li:hover {
   height: fit-content; /* İçeriğe göre genişlik ayarlar */
   position: relative;
 }
-
+nav {
+  border-bottom: 2px solid #f6af78;
+}
 /* Arama kutusu input elementinin stili */
 .input-search {
   height: 50px; /* Yükseklik ayarı */
