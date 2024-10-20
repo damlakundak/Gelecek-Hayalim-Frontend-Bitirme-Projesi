@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/favicon.svg" />
-    <title>Document</title>
+    <title>Inspire.com</title>
 
     <!-- Bootstrap dosyasını projeye dahil etme -->
     <link
@@ -21,24 +21,25 @@
     <link href="/font/css/brands.css" rel="stylesheet" />
     <link href="/font/css/solid.css" rel="stylesheet" />
   </head>
-  <!-- Arka plan teması koyu renk -->
-  <body class="bg-dark">
+  <body >
     <!-- Header -->
     <nav
       class="navbar navbar-expand navbar-dark bg-dark"
       aria-label="Second navbar example"
     >
+    <!-- Logomuz -->
       <div class="container-fluid">
         <img
-          src="/images/el.jpg"
+          src="images/el.jpg"
           alt="logo"
           style="
             width: 60px;
             height: 60px;
             border-radius: 50px;
             margin-right: 10px;
-          "
-        />
+          " />
+
+          <!--Sitemizin adı  -->
         <a class="navbar-brand" href="index.html"> Inspire.com </a>
         <button
           class="navbar-toggler"
@@ -52,14 +53,11 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Diğer sayfaların bağlantıları  -->
         <div class="collapse navbar-collapse" id="navbarsExample02">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="biyografi.html"
-              >
+              <a class="nav-link active" aria-current="page" href="album.html">
                 Biyografi
               </a>
             </li>
@@ -72,6 +70,8 @@
               </a>
             </li>
           </ul>
+
+          <!-- Arama butonu -->
           <div class="search-box">
             <button class="btn-search"><i class="fa fa-search"></i></button>
             <input
@@ -79,6 +79,30 @@
               class="input-search"
               placeholder="Type to Search..."
             />
+          </div>
+
+          <!-- Aydınlık/karanlık mod butonu -->
+          <div class="wrapper">
+            <input type="checkbox" id="hide-checkbox" />
+            <label for="hide-checkbox" class="toggle">
+              <span class="toggle-button">
+                <span class="crater crater-1"></span>
+                <span class="crater crater-2"></span>
+                <span class="crater crater-3"></span>
+                <span class="crater crater-4"></span>
+                <span class="crater crater-5"></span>
+                <span class="crater crater-6"></span>
+                <span class="crater crater-7"></span>
+              </span>
+              <span class="star star-1"></span>
+              <span class="star star-2"></span>
+              <span class="star star-3"></span>
+              <span class="star star-4"></span>
+              <span class="star star-5"></span>
+              <span class="star star-6"></span>
+              <span class="star star-7"></span>
+              <span class="star star-8"></span>
+            </label>
           </div>
         </div>
       </div>
@@ -88,11 +112,11 @@
       <section class="text-center">
         <div class="row py-lg-5 justify-content-around">
           <div class="col-lg-10 col-md-10">
-            <h1 class="fw-light" style="color: #ffffff">Güçlü Kadınlar</h1>
-            <h1 class="fw-light" style="color: #ffffff">
+            <h1 class="theme-text" >Güçlü Kadınlar</h1>
+            <h1 class="theme-text" >
               İlham Verici Hikayeler
             </h1>
-            <p class="lead" style="color: #ffffff; opacity: 0.5">
+            <p class="theme-text" id="typing">
               Başarıya giden yolda karşılaştıkları engelleri aşan kadınların
               ilham verici hikayelerini keşfedin. Bu kitaplar, iş dünyasında
               zorluklarla mücadele eden, azim, kararlılık ve yaratıcılıkla
@@ -109,28 +133,6 @@
         </div>
       </section>
     </main>
-    <!-- <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        typeWriter();
-      });
-      var i = 0;
-      var txt =
-        " Başarıya giden yolda karşılaştıkları engelleri aşan kadınların ilham verici hikayelerini keşfedin. Bu kitaplar, iş dünyasında zorluklarla mücadele eden, azim, kararlılık ve yaratıcılıkla başarıya ulaşan güçlü kadınların deneyimlerini gözler önüne seriyor. Her bir sayfa, cesaretin, direncin ve değişim yaratma gücünün gücünü anlatıyor. Bu hikayelerle kendinizi cesur kadınların mücadele dolu yolculuklarına kaptıracak, onların deneyimlerinden ilham alarak kendi potansiyelinizi keşfetme yolunda adım atacaksınız. Çünkü gerçek başarı, sadece beceride değil, aynı zamanda cesurca risk alıp zorlukları aşma gücünde yatar.";
-      var speed = 25; /* The speed/duration of the effect in milliseconds */
-
-      function typeWriter() {
-        document.getElementById("typing").innerHTML += txt.charAt(i);
-        i++;
-        if (txt.charAt(i) === ".") {
-          // wait for 1 second after each sentence
-          document.getElementById("typing").innerHTML += txt.charAt(i);
-          i++;
-          setTimeout(typeWriter, 1000);
-        } else if (i < txt.length) {
-          setTimeout(typeWriter, speed);
-        }
-      }
-    </script> -->
 
     <div class="specialdiv">
       <div class="container">
@@ -161,8 +163,7 @@
           <label class="card" for="item-3" id="kitap-3">
             <img
               src="https://upload.wikimedia.org/wikipedia/tr/6/6b/Bin_Muhte%C5%9Fem_G%C3%BCne%C5%9F.jpg"
-              alt="kitap"
-            />
+              alt="kitap"/>
           </label>
 
           <label class="card" for="item-4" id="kitap-4">
@@ -207,8 +208,7 @@
         <div class="book-card">
           <img
             src="https://upload.wikimedia.org/wikipedia/tr/6/6b/Bin_Muhte%C5%9Fem_G%C3%BCne%C5%9F.jpg"
-            alt="Kadın ve İktidar"
-          />
+            alt="Bin Muhteşem Güneş"/>
           <h2>Bin Muhteşem Güneş</h2>
           <p>
             Bin Muhteşem Güneş" (A Thousand Splendid Suns) Khaled Hosseini'nin
@@ -341,8 +341,7 @@
         <div class="book-card">
           <img
             src="https://cdn.kobo.com/book-images/d7080d75-afd2-40f0-b4bd-ef352dac3583/1200/1200/False/tarihi-degistiren-kadnlar.jpg"
-            alt="Kadın ve İktidar"
-          />
+            alt="Tarihi Değiştiren Kadınlar"/>
           <h2>Tarihi Değiştiren Kadınlar</h2>
           <p>
             Antik çağlardan modern döneme kadar farklı zaman dilimlerinden
@@ -454,11 +453,8 @@
 
     <!-- footer -->
     <footer class="py-3 my-4 border-top">
-      <div
-        class="d-flex align-items-center justify-content-evenly"
-        style="color: white"
-      >
-        <div class="d-flex flex-row align-items-center">
+      <div class="theme-text d-flex align-items-center justify-content-evenly" >
+        <div class="theme-text d-flex flex-row align-items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -472,24 +468,17 @@
             />
           </svg>
 
-          <div class="d-flex flex-column align-items-center">
-            <a
-              href="https://github.com/aysegulsum"
-              class="text-white"
-              style="margin: 5px"
-            >
+          <!-- Github hesaplarımız -->
+          <div class="theme-text d-flex flex-column align-items-center">
+            <a href="https://github.com/aysegulsum" style="margin: 5px" >
               aysegulsum
             </a>
-            <a
-              href="https://github.com/damlakundak"
-              class="text-white"
-              style="margin: 5px"
-            >
+            <a href="https://github.com/damlakundak" style="margin: 5px" >
               damlakundak
             </a>
           </div>
         </div>
-        <div class="d-flex flex-row align-items-center">
+        <div class="theme-text d-flex flex-row align-items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="36"
@@ -503,24 +492,17 @@
             />
           </svg>
 
-          <div class="d-flex flex-column align-items-center m-lg-2">
-            <a
-              href="https://www.linkedin.com/in/ay%C5%9Fe-g%C3%BCls%C3%BCm-eren-4375701bb/"
-              class="text-white"
-              style="margin: 5px"
-            >
+          <!-- Linkedin profillerimiz -->
+          <div class="theme-text d-flex flex-column align-items-center m-lg-2">
+            <a href="https://www.linkedin.com/in/ay%C5%9Fe-g%C3%BCls%C3%BCm-eren-4375701bb/" style="margin: 5px" >
               Ayşe Gülsüm Eren
             </a>
-            <a
-              href="https://www.linkedin.com/in/damla-kundak-2027bb270/"
-              class="text-white"
-              style="margin: 5px"
-            >
+            <a href="https://www.linkedin.com/in/damla-kundak-2027bb270/" style="margin: 5px">
               Damla Kundak
             </a>
           </div>
         </div>
-        <div class="d-flex flex-row align-items-center">
+        <div class="theme-text d-flex flex-row align-items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="36"
@@ -534,20 +516,18 @@
             />
           </svg>
 
-          <div class="d-flex flex-column align-items-center m-lg-2">
-            <a
-              href="mailto:info@example.com"
-              class="text-white"
-              style="margin: 5px"
-            >
+          <!-- Mail adreslerimiz -->
+          <div class="theme-text d-flex flex-column align-items-center m-lg-2">
+            <a href="mailto:info@example.com" style="margin: 5px">
               aaysegulsumm@gmail.com
             </a>
-            <a href="mailto:info@example.com" class="text-white">
+            <a href="mailto:info@example.com" >
               damlakundak@gmail.com
             </a>
           </div>
         </div>
 
+        <!-- Sayfanın en sağındaki balon ikonu -->
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="55"
@@ -575,27 +555,6 @@
             repeatCount="indefinite"
           />
         </svg>
-        <style>
-          @keyframes bounce {
-            0%,
-            20%,
-            50% {
-              transform: translateY(0);
-            }
-            40% {
-              transform: translateY(-30px);
-            }
-            60% {
-              transform: translateY(-15px);
-            }
-            80% {
-              transform: translateY(-25px);
-            }
-            100% {
-              transform: translateY(-15px);
-            }
-          }
-        </style>
       </div>
     </footer>
 
