@@ -5,8 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/favicon.svg" />
     <title>Inspire.com</title>
-    <link rel="stylesheet" href="film.css" />
-    
+    <link href="/font/css/fontawesome.css" rel="stylesheet" />
+    <link href="/font/css/brands.css" rel="stylesheet" />
+    <link href="/font/css/solid.css" rel="stylesheet" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/album/"/>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
+
+   <!-- Bootstrap dosyasını projeye dahil etme -->
+    <link
+      href="/docs/5.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      href="/docs/5.3/assets/img/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.3/assets/img/favicons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.3/assets/img/favicons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg"
+      color="#712cf9"
+    />
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico" />
+    <meta name="theme-color" content="#712cf9" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,25 +60,24 @@
     <link href="/font/css/brands.css" rel="stylesheet" />
     <link href="/font/css/solid.css" rel="stylesheet" />
   </head>
-  <body class="bg-dark">
-    
+  <body>
     
     <!-- Header -->
     <nav
       class="navbar navbar-expand navbar-dark bg-dark"
-      aria-label="Second navbar example"
-    >
+      aria-label="Second navbar example">
+      <!-- Logomuz -->
       <div class="container-fluid">
         <img
-          src="/images/el.jpg"
+          src="images/el.jpg"
           alt="logo"
           style="
             width: 60px;
             height: 60px;
             border-radius: 50px;
-            margin-right: 10px;
-          "
-        />
+            margin-right: 10px;" />
+
+        <!--Sitemizin adı  -->
         <a class="navbar-brand" href="index.html"> Inspire.com </a>
         <button
           class="navbar-toggler"
@@ -44,15 +86,16 @@
           data-bs-target="#navbarsExample02"
           aria-controls="navbarsExample02"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
+          
           <span class="navbar-toggler-icon"></span>
         </button>
 
+         <!-- Diğer sayfaların bağlantıları  -->
         <div class="collapse navbar-collapse" id="navbarsExample02">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="biyografi.html">
+              <a class="nav-link active" aria-current="page" href="album.html">
                 Biyografi
               </a>
             </li>
@@ -65,24 +108,66 @@
               </a>
             </li>
           </ul>
+          <!-- Arama butonu -->
           <div class="search-box">
             <button class="btn-search"><i class="fa fa-search"></i></button>
             <input
               type="text"
               class="input-search"
-              placeholder="Type to Search..."
-            />
+              placeholder="Type to Search..."/>
           </div>
+         <!-- Aydınlık/karanlık mod butonu -->
+          <div class="wrapper">
+            <input type="checkbox" id="hide-checkbox" />
+            <label for="hide-checkbox" class="toggle">
+              <span class="toggle-button">
+                <span class="crater crater-1"></span>
+                <span class="crater crater-2"></span>
+                <span class="crater crater-3"></span>
+                <span class="crater crater-4"></span>
+                <span class="crater crater-5"></span>
+                <span class="crater crater-6"></span>
+                <span class="crater crater-7"></span>
+              </span>
+              <span class="star star-1"></span>
+              <span class="star star-2"></span>
+              <span class="star star-3"></span>
+              <span class="star star-4"></span>
+              <span class="star star-5"></span>
+              <span class="star star-6"></span>
+              <span class="star star-7"></span>
+              <span class="star star-8"></span>
+            </label>
+          </div>
+          <!-- Aydınlık/karanlık mod butonunun script kodu -->
+          <script>
+            document
+              .getElementById("hide-checkbox")
+              .addEventListener("change", function () {
+                if (this.checked) {
+                  document.body.classList.add("light-theme", this.checked);
+                  document.body.classList.remove("dark-theme", this.checked);
+                  // document.body.classList.add("bg-light", this.checked);
+                  // document.body.classList.remove("bg-dark", this.checked);
+                } else {
+                  // document.body.classList.remove("bg-light", this.checked);
+                  // document.body.classList.add("bg-dark", this.checked);
+                  document.body.classList.add("dark-theme", this.checked);
+                  document.body.classList.remove("light-theme", this.checked);
+                }
+              });
+          </script>
         </div>
       </div>
     </nav>
     <main>
+      <!-- Motivasyon yazımız -->
       <section class="text-center container">
         <div class="row py-lg-5">
           <div class="col-lg-10 col-md-10 mx-auto">
-            <h1 class="fw-light" style="color: #fff;">Güçlü Kadınlar </h2>
-            <h1 class="fw-light" style="color: #fff;">İlham Verici Hikayeler </h2>
-            <p class="lead text-body-secondary" style="color: #ffffffbf !important;">
+            <h1 class="theme-text" >Güçlü Kadınlar </h2>
+            <h1 class="theme-text" >İlham Verici Hikayeler </h2>
+            <p class="theme-text">
               Güçlü kadınların hikayelerini ve toplumsal cinsiyet eşitliği mücadelesini keşfedin. Her bir belgesel
                ve film, azmin ve kararlılığın önemini vurgularken, cesur kadınların deneyimlerinden ilham almanızı 
                sağlıyor. Kendi potansiyelinizi keşfetmek için bu ilham verici yapımları izleyin çünkü her bir hikaye, 
@@ -93,42 +178,17 @@
         </div>
       </section>
 
-      <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          typeWriter();
-        });
-        var i = 0;
-        var txt =
-        "Güçlü kadınların hikayelerini ve toplumsal cinsiyet eşitliği mücadelesini keşfedin. Her bir belgesel ve film, azmin ve kararlılığın önemini vurgularken, cesur kadınların deneyimlerinden ilham almanızı sağlıyor. Kendi potansiyelinizi keşfetmek için bu ilham verici yapımları izleyin çünkü her bir hikaye, zorluklara göğüs geren ve başarıya ulaşan kadınların azmiyle doludur. Eğitimin, öz güvenin ve dayanışmanın önemiyle şekillenen bu yapımlarla, geleceğinizi daha parlak bir hale getirmek için gereken motivasyonu elde edin.";
-          
-        var speed = 25; /* The speed/duration of the effect in milliseconds */
-
-        function typeWriter() {
-          document.getElementById("typing").innerHTML += txt.charAt(i);
-          i++;
-          if (txt.charAt(i) === ".") {
-            // wait for 1 second after each sentence
-            document.getElementById("typing").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, 1000);
-          } else if (i < txt.length) {
-            setTimeout(typeWriter, speed);
-          }
-        }
-      </script> -->
-
     <div class="container px-4 py-5" id="custom-cards">
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <!-- 1.Film  -->
         <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-1.jpg')"
-          >
-            <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-            >
-              <img src= "images/intern.jpg"  />
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-1.jpg')">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <!-- Filmin afişi -->
+              <img src= "images/intern.jpg"  /> 
               <h2 class="align-self-center">Intern</h2>
+              <!-- Filmin açıklaması -->
               <p style="text-align: center;">
                 Başarılı bir e-ticaret şirketinin kurucusu olan Jules Ostin’in
                 iş dünyasında karşılaştığı zorlukları ve liderlik rolünü
@@ -139,14 +199,11 @@
           </div>
         </div>
 
+        <!-- 2. Film -->
         <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-2.jpg')"
-          >
-            <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-            >
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-2.jpg')">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <img src="images/hiddenfigures.jpg" />
               <h2 class="align-self-center">Hidden Figures </h2>
              <p style="text-align: center;">
@@ -157,17 +214,15 @@
           </div>
         </div>
 
+        <!-- 3. Film -->
         <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-3.jpg')"
-          >
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-3.jpg')">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
               <img src= "images/code.jpg" />
               <h2 class="align-self-center">Code:Debugging the</h2>
               <h2 class="align-self-center">Gender Gap </h2>
-
-             <p style="text-align: center;">
+              <p style="text-align: center;">
               Bu belgesel, teknoloji sektöründeki cinsiyet eşitsizliğine ve azınlık gruplarının 
               temsil eksikliğine odaklanıyor. Kadınların teknoloji alanına nasıl daha fazla dahil edilebileceği 
               konusunda önemli sorular soruyor ve sektördeki ayrımcılığı gözler önüne seriyor.
@@ -175,44 +230,41 @@
             </div>
           </div>
         </div>
-<!-- 4 -->
+
+         <!-- 4. Film --> 
         <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-3.jpg')"
-          >
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-3.jpg')">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
               <img src= "images/computers.jpeg" />
               <h2 class="align-self-center">The Computers(2014) </h2>
-             <p style="text-align: center;">
+              <p style="text-align: center;">
               II. Dünya Savaşı sırasında, dünyanın ilk elektronik dijital bilgisayarı ENIAC'ın programlanmasında görev alan altı 
               kadının hikayesini anlatan bu kısa belgesel, kadınların teknoloji tarihinde nasıl görmezden gelindiğini gösteriyor.
             </p>
             </div>
           </div>
         </div>
-        <!-- 5 -->
+
+        <!-- 5. Film -->
         <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-3.jpg')"
-          >
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-3.jpg')">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
               <img src= "images/pictureAScientist.jpeg" />
               <h2 class="align-self-center">Picture a Scientist </h2>
-             <p style="text-align: center;">
+              <p style="text-align: center;">
               Film, kadınların bilim ve teknoloji alanlarındaki mücadelelerini anlatıyor ve toplumsal cinsiyet eşitliği konusundaki 
               engelleri aşmanın yollarını araştırıyor. Ayrıca, bu alanlarda kadınların nasıl daha fazla görünür hale getirilebileceğine odaklanıyor.
-            </p>
+              </p>
             </div>
           </div>
         </div>
-        <!-- 6 -->
+
+        <!-- 6. Film -->
         <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-3.jpg')"
-          >
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-3.jpg')">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
               <img src= "images/RGB.jpeg" />
               <h2 class="align-self-center">RBG </h2>
@@ -223,12 +275,11 @@
             </div>
           </div>
         </div>
-        <!-- 7 -->
+
+        <!-- 7. Film -->
         <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-3.jpg')"
-          >
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-3.jpg')">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
               <img src="images/missRepresentation.jpeg" />
               <h2 class="align-self-center">Miss Representation </h2>
@@ -239,27 +290,26 @@
             </div>
           </div>
         </div>
-<!-- 8 -->
+
+         <!-- 8. Film -->
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-3.jpg')" >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <img src="images/joy.jpg" />
+              <h2 class="align-self-center">Joy(2015) </h2>
+              <p style="text-align: center;">
+              Joy Mangano’nun başarı hikayesini anlatan bu film, girişimcilik alanında kadınların karşılaştığı 
+              zorlukları ve azimle başarıya ulaşma sürecini işliyor.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+<!-- 9. Film -->
 <div class="col">
-  <div
-    class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-    style="background-image: url('unsplash-photo-3.jpg')"
-  >
-    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-      <img src="images/joy.jpg" />
-      <h2 class="align-self-center">Joy(2015) </h2>
-     <p style="text-align: center;">
-      Joy Mangano’nun başarı hikayesini anlatan bu film, girişimcilik alanında kadınların karşılaştığı zorlukları ve azimle başarıya ulaşma sürecini işliyor.
-    </p>
-    </div>
-  </div>
-</div>
-<!-- 9 -->
-<div class="col">
-  <div
-    class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-    style="background-image: url('unsplash-photo-3.jpg')"
-  >
+  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+    style="background-image: url('unsplash-photo-3.jpg')">
     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
       <img src= "images/girlRising.jpeg" />
       <h2 class="align-self-center">Girl Rising(2013) </h2>
@@ -269,12 +319,11 @@
     </div>
   </div>
 </div>
-<!-- 10 -->
+
+<!-- 10. Film -->
 <div class="col">
-  <div
-    class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-    style="background-image: url('unsplash-photo-3.jpg')"
-  >
+  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+    style="background-image: url('unsplash-photo-3.jpg')">
     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
       <img src= "images/sheDidThat.jpeg" />
       <h2 class="align-self-center">She Did That(2019) </h2>
@@ -285,128 +334,121 @@
     </div>
   </div>
 </div>
-<!-- 11 -->
+
+<!-- 11. Film -->
 <div class="col">
-  <div
-    class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-    style="background-image: url('unsplash-photo-3.jpg')"
-  >
+  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+    style="background-image: url('unsplash-photo-3.jpg')">
     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
       <img src= "images/womenWhoCode.jpg" />
       <h2 class="align-self-center">Women Who </h2>
       <h2 class="align-self-center">Code(2016) </h2>
-
      <p style="text-align: center;">
-      Bu belgesel kısa, ancak teknolojideki kadınların hikayelerini ve kadın yazılım geliştiricilerin karşılaştıkları cinsiyetçi bariyerleri ele alıyor. Kadınların teknoloji sektöründeki varlığını artırmaya yönelik çabalara odaklanıyor.
+      Bu belgesel kısa, ancak teknolojideki kadınların hikayelerini ve kadın yazılım geliştiricilerin 
+      karşılaştıkları cinsiyetçi bariyerleri ele alıyor. Kadınların teknoloji sektöründeki varlığını artırmaya 
+      yönelik çabalara odaklanıyor.
     </p>
     </div>
   </div>
 </div>
-<!-- 12 -->
+
+<!-- 12. Film -->
 <div class="col">
-  <div
-    class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-    style="background-image: url('unsplash-photo-3.jpg')"
-  >
+  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+    style="background-image: url('unsplash-photo-3.jpg')">
     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
       <img src="images/chasingGrace.webp" />
       <h2 class="align-self-center">Chasing Grace</h2>
       <h2 class="align-self-center">Project(2018) </h2>
-
      <p style="text-align: center;">
-      Bu belgesel serisi, teknoloji sektöründe çalışan kadınların yaşadıkları cinsiyet eşitsizliğine dair gerçek hikayeleri anlatıyor. Kadınlar için daha eşitlikçi bir gelecek inşa etmek için verilen mücadeleye dikkat çekiyor.
+      Bu belgesel serisi, teknoloji sektöründe çalışan kadınların yaşadıkları cinsiyet eşitsizliğine dair 
+      gerçek hikayeleri anlatıyor. Kadınlar için daha eşitlikçi bir gelecek inşa etmek için verilen mücadeleye 
+      dikkat çekiyor.
     </p>
     </div>
   </div>
 </div>
-<!-- 13 -->
+
+<!-- 13. Film -->
 <div class="col">
-  <div
-    class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-    style="background-image: url('unsplash-photo-3.jpg')"
-  >
+  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+    style="background-image: url('unsplash-photo-3.jpg')">
     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
       <img src="images/becoming.jpeg" />
       <h2 class="align-self-center">Becoming </h2>
      <p style="text-align: center;">
-      Eski ABD First Lady’si Michelle Obama'nın aynı adlı otobiyografisinden uyarlanan bir belgeseldir. Film, Michelle Obama’nın hayatını ve özellikle 2018’de yayımlanan kitabının tanıtım turunu konu alır. Sadece politik bir figür olarak değil, bir anne, eş ve güçlü bir kadın olarak kimliğini keşfetme sürecini anlatır.
+      Eski ABD First Lady’si Michelle Obama'nın aynı adlı otobiyografisinden uyarlanan bir belgeseldir. Film, 
+      Michelle Obama’nın hayatını ve özellikle 2018’de yayımlanan kitabının tanıtım turunu konu alır. Sadece
+      politik bir figür olarak değil, bir anne, eş ve güçlü bir kadın olarak kimliğini keşfetme sürecini anlatır.
     </p>
     </div>
   </div>
 </div>
-<!-- 14 -->
+
+<!-- 14. Film -->
 <div class="col">
-  <div
-    class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-    style="background-image: url('unsplash-photo-3.jpg')"
-  >
+  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+    style="background-image: url('unsplash-photo-3.jpg')" >
     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
       <img src="images/devilwearsprada.jpg" />
       <h2 class="align-self-center">The Devil</h2>
       <h2 class="align-self-center"> Wears Prada </h2>
-
      <p style="text-align: center;">
-      Moda dünyasında geçen bu film, güçlü bir kadın lider olan Miranda Priestly karakteri üzerinden iş dünyasında kadının gücünü ve etkisini gözler önüne seriyor.
+      Moda dünyasında geçen bu film, güçlü bir kadın lider olan Miranda Priestly karakteri üzerinden iş dünyasında 
+      kadının gücünü ve etkisini gözler önüne seriyor.
     </p>
     </div>
   </div>
 </div>
-<!-- 15 -->
+
+<!-- 15. Film -->
 <div class="col">
-  <div
-    class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-    style="background-image: url('unsplash-photo-3.jpg')"
-  >
+  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+    style="background-image: url('unsplash-photo-3.jpg')" >
     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
       <img src="images/erinbron.jpg" />
       <h2 class="align-self-center">Erin Brockovich </h2>
-     <p style="text-align: center;">
-      Gerçek bir hikayeye dayanan bu film, Erin Brockovich’in bir avukatlık firmasında çalışırken büyük bir çevre davasını kazanma hikayesini anlatıyor. Güçlü bir kadının kararlılığı ve mücadelesini gözler önüne seriyor.
-    </p>
+      <p style="text-align: center;">
+        Gerçek bir hikayeye dayanan bu film, Erin Brockovich’in bir avukatlık firmasında çalışırken büyük bir çevre 
+        davasını kazanma hikayesini anlatıyor. Güçlü bir kadının kararlılığı ve mücadelesini gözler önüne seriyor.
+      </p>
     </div>
   </div>
 </div>
-      </div>
-    </div>
-    </main>
+</div>
+</div>
+
    <!-- footer -->
    <footer class="py-3 my-4 border-top">
-    <div
-      class="d-flex align-items-center justify-content-evenly"
-      style="color: white"
-    >
-      <div class="d-flex flex-row align-items-center">
+    <div class="theme-text d-flex align-items-center justify-content-evenly">
+      <div class="theme-text d-flex flex-row align-items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
           fill="currentColor"
           class="bi bi-github"
-          viewBox="0 0 16 16"
-        >
+          viewBox="0 0 16 16">
           <path
-            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-          />
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.
+            37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 
+            1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.
+            08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92
+            .08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 
+            .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
         </svg>
 
-        <div class="d-flex flex-column align-items-center">
-          <a
-            href="https://github.com/aysegulsum"
-            class="text-white"
-            style="margin: 5px"
-          >
+        <!-- Github hesaplarımız -->
+        <div class="theme-text d-flex flex-column align-items-center">
+          <a href="https://github.com/aysegulsum" style="margin: 5px"  >
             aysegulsum
           </a>
-          <a
-            href="https://github.com/damlakundak"
-            class="text-white"
-            style="margin: 5px"
-          >
+          <a href="https://github.com/damlakundak"  style="margin: 5px"  >
             damlakundak
           </a>
         </div>
       </div>
-      <div class="d-flex flex-row align-items-center">
+      <div class="theme-text d-flex flex-row align-items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
@@ -416,67 +458,74 @@
           viewBox="0 0 16 16"
         >
           <path
-            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-          />
+            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1
+            .175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248
+            -.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-
+            .216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1
+            .184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.
+            225z"/>
         </svg>
 
-        <div class="d-flex flex-column align-items-center m-lg-2">
-          <a
-            href="https://www.linkedin.com/in/ay%C5%9Fe-g%C3%BCls%C3%BCm-eren-4375701bb/"
-            class="text-white"
-            style="margin: 5px"
-          >
+        <!-- Linkedin profillerimiz -->
+        <div class="theme-text d-flex flex-column align-items-center m-lg-2">
+          <a href="https://www.linkedin.com/in/ay%C5%9Fe-g%C3%BCls%C3%BCm-eren-4375701bb/"
+            style="margin: 5px" >
             Ayşe Gülsüm Eren
           </a>
-          <a
-            href="https://www.linkedin.com/in/damla-kundak-2027bb270/"
-            class="text-white"
-            style="margin: 5px"
-          >
+          <a href="https://www.linkedin.com/in/damla-kundak-2027bb270/"
+            style="margin: 5px" >
             Damla Kundak
           </a>
         </div>
       </div>
-      <div class="d-flex flex-row align-items-center">
+
+      <!-- Mail ikonu -->
+      <div class="theme-text d-flex flex-row align-items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
           height="36"
           fill="currentColor"
           class="bi bi-envelope"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
-          />
-        </svg>
+          viewBox="0 0 16 16">
 
-        <div class="d-flex flex-column align-items-center m-lg-2">
-          <a
-            href="mailto:info@example.com"
-            class="text-white"
-            style="margin: 5px"
-          >
+          <path
+            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-
+            4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.
+            47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+        </svg>
+        
+        <!-- Mail adreslerimiz -->
+        <div class="theme-text d-flex flex-column align-items-center m-lg-2">
+          <a href="mailto:info@example.com"  style="margin: 5px" >
             aaysegulsumm@gmail.com
           </a>
-          <a href="mailto:info@example.com" class="text-white">
+          <a href="mailto:info@example.com" >
             damlakundak@gmail.com
           </a>
         </div>
       </div>
 
+      <!-- Sayfanın en sağındaki balon ikonu -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="55"
         height="55"
         fill="currentColor"
         class="bi bi-balloon-heart"
-        viewBox="0 0 16 16"
-      >
+        viewBox="0 0 16 16">
+
         <path
           fill-rule="evenodd"
-          d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"
-        />
+          d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 
+          10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm
+          -.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 
+          10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.
+          235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003
+          .133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 
+          1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.
+          487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+
         <animateTransform
           attributeName="transform"
           type="translate"
@@ -494,6 +543,7 @@
       </svg>
     </div>
   </footer>
+  <!-- Bootstrap bağlantısı -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
